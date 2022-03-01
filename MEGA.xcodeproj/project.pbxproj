@@ -1057,6 +1057,7 @@
 		83FEA8B625C1B3990063A560 /* FolderLinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */; };
 		83FF502F247E86CD00EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
 		83FF5030247E86F600EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
+		857F524927CE5D5200B1A53A /* walletTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F524827CE5D5200B1A53A /* walletTest.swift */; };
 		9411354F1F00FD1500D33428 /* Cloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415226691A692ECC00EC7BB6 /* Cloud.storyboard */; };
 		941135501F00FFAB00D33428 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AB8EC01A7103B300E40A39 /* BrowserViewController.m */; };
 		941135521F00FFE400D33428 /* MEGAReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 418072791AA5BBA00078D950 /* MEGAReachabilityManager.m */; };
@@ -3339,6 +3340,7 @@
 		83FB1438219C372800418BE6 /* MOOfflineFolderLayout+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MOOfflineFolderLayout+CoreDataProperties.m"; sourceTree = "<group>"; };
 		83FEA8B125C1B3970063A560 /* FolderLinkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkCollectionViewController.swift; sourceTree = "<group>"; };
 		83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkTableViewController.swift; sourceTree = "<group>"; };
+		857F524827CE5D5200B1A53A /* walletTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletTest.swift; sourceTree = "<group>"; };
 		9419B6BE1F20D1D700FEBE31 /* MEGAIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGAIndexer.h; path = Spotlight/MEGAIndexer.h; sourceTree = "<group>"; };
 		9419B6BF1F20D1D700FEBE31 /* MEGAIndexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGAIndexer.m; path = Spotlight/MEGAIndexer.m; sourceTree = "<group>"; };
 		9419B6C51F20DC5700FEBE31 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
@@ -7669,6 +7671,14 @@
 			path = ContactsGroups;
 			sourceTree = "<group>";
 		};
+		857F524527CE562E00B1A53A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				857F524827CE5D5200B1A53A /* walletTest.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		9419B6BD1F20D18300FEBE31 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
@@ -10033,6 +10043,7 @@
 		E889C9DE1B55652B00ECEFDF /* My Account */ = {
 			isa = PBXGroup;
 			children = (
+				857F524527CE562E00B1A53A /* Wallet */,
 				B6C95965268561EF00CF73A8 /* Ratings */,
 				5BB8A851243DF3DA009FE957 /* Usage */,
 				A8C93C0A22D718030030CE1B /* Profile */,
@@ -11263,6 +11274,7 @@
 				5B78F0B21F3C5362007ED721 /* MyAccountHallViewController.m in Sources */,
 				BFAB114D23CEA5C300BCE72D /* Albums.swift in Sources */,
 				836AEDE020188F3C00868FC7 /* TestPasswordViewController.m in Sources */,
+				857F524927CE5D5200B1A53A /* walletTest.swift in Sources */,
 				BF9457C224FDC8EE0048F82B /* PhotosExplorerViewController.swift in Sources */,
 				124667FB275DB82000C94335 /* CustomModalAlertViewController+LaunchTab.swift in Sources */,
 				5B8281491E7BE8300079C1BB /* SelectableTableViewCell.m in Sources */,

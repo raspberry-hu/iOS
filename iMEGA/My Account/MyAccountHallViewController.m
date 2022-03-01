@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, MyAccount) {
     MyAccountSettings = 0,
     MyAccountContacts,
     MyAccountNotifications,
+    MyAccountWallet,
     MyAccountAchievements,
     MyAccountTransfers,
     MyAccountOffline,
@@ -298,7 +299,8 @@ typedef NS_ENUM(NSInteger, MyAccount) {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return (section == MyAccountSectionMEGA) ? 7 : 1;
+    //首先添加一行数据
+    return (section == MyAccountSectionMEGA) ? 8 : 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -353,7 +355,25 @@ typedef NS_ENUM(NSInteger, MyAccount) {
             cell.pendingLabel.text = nil;
             break;
         }
-            
+//添加钱包入口table代码
+        case MyAccountWallet: {
+            cell.sectionLabel.text = NSLocalizedString(@"wallet", nil);
+            cell.iconImageView.image = [UIImage imageNamed:@"icon-wallet"].imageFlippedForRightToLeftLayoutDirection;
+            NSUInteger unseenUserAlerts = [MEGASdkManager sharedMEGASdk].userAlertList.mnz_relevantUnseenCount;
+            if (unseenUserAlerts == 0) {
+                cell.pendingView.hidden = YES;
+                cell.pendingLabel.text = nil;
+            } else {
+                if (cell.pendingView.hidden) {
+                    cell.pendingView.hidden = NO;
+                    cell.pendingView.clipsToBounds = YES;
+                }
+                
+                cell.pendingLabel.text = [NSString stringWithFormat:@"%tu", unseenUserAlerts];
+            }
+            break;
+        }
+//
         case MyAccountNotifications: {
             cell.sectionLabel.text = NSLocalizedString(@"notifications", nil);
             cell.iconImageView.image = [UIImage imageNamed:@"icon-notifications"].imageFlippedForRightToLeftLayoutDirection;
@@ -450,6 +470,12 @@ typedef NS_ENUM(NSInteger, MyAccount) {
                 MEGALogError(@"Account details unavailable");
             }
             
+            break;
+        }
+            
+        case MyAccountWallet: {
+            NotificationsTableViewController *notificationsTVC = [[UIStoryboard storyboardWithName:@"Notifications" bundle:nil] instantiateViewControllerWithIdentifier:@"NotificationsTableViewControllerID"];
+            [self.navigationController pushViewController:notificationsTVC animated:YES];
             break;
         }
             

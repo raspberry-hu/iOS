@@ -536,6 +536,7 @@ internal enum Asset {
       internal static let iconOffline = ImageAsset(name: "icon-offline")
       internal static let iconSettings = ImageAsset(name: "icon-settings")
       internal static let iconStorage = ImageAsset(name: "icon-storage")
+      internal static let iconWallet = ImageAsset(name: "icon-wallet")
       internal static let iconTransfers = ImageAsset(name: "icon-transfers")
       internal static let qrCodeIcon = ImageAsset(name: "qrCodeIcon")
       internal static let scanQRCode = ImageAsset(name: "scanQRCode")
