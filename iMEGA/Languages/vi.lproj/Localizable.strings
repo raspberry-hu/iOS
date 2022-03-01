@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Đang bận";
 /*  */
+"wallet"="ví tiền";
+/*  */
 "notifications"="Thông Báo";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Gửi Tin Nhắn";

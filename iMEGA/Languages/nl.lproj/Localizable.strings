@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Bezig";
 /*  */
+"wallet"="portemonnee";
+/*  */
 "notifications"="Meldingen";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Bericht Versturen";

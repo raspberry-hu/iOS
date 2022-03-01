@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="取り込み中";
 /*  */
+"wallet"="財布";
+/*  */
 "notifications"="通知";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="メッセージを送信";

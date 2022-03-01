@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Занят";
 /*  */
+"wallet"="бумажник";
+/*  */
 "notifications"="Оповещения";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Отправить Сообщение";

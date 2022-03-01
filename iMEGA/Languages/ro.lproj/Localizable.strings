@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Ocupat";
 /*  */
+"wallet"="Portofel";
+/*  */
 "notifications"="Notificări";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Trimite mesaj";

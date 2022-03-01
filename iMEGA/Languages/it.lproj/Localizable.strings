@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Occupato";
 /*  */
+"wallet"="Portafoglio";
+/*  */
 "notifications"="Notifiche";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Invia messaggio";

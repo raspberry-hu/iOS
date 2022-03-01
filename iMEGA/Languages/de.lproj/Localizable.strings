@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Beschäftigt";
 /*  */
+"wallet"="Brieftasche";
+/*  */
 "notifications"="Benachrichtigungen";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Nachricht schicken";

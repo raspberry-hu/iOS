@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="Sibuk";
 /*  */
+"wallet"="Dompet";
+/*  */
 "notifications"="Pemberitahuan";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="Kirim Pesan";

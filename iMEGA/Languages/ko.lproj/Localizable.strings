@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="바쁨";
 /*  */
+"wallet"="지갑";
+/*  */
 "notifications"="알림";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="메시지 보내기";

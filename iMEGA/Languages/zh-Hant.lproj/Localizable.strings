@@ -1233,6 +1233,8 @@
 /*  */
 "busy"="忙碌";
 /*  */
+"wallet"="錢包";
+/*  */
 "notifications"="提醒";
 /* Title to perform the action of sending a message to a contact. */
 "sendMessage"="發送訊息";
