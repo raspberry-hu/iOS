@@ -554,6 +554,8 @@
 "addFromEmail"="Nhập địa chỉ email";
 /* Title of Shared Items section */
 "sharedItems"="Các Mục Chia Sẻ";
+/* 钱包铸币 */
+"Mint"="đồng tiền";
 /* Title of the tab bar item for the Shared Items section */
 "shared"="Mục Chia Sẻ";
 /* Title of the "Incoming" Shared Items. */

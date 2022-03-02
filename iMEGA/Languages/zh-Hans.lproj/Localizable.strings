@@ -554,6 +554,8 @@
 "addFromEmail"="输入电子邮箱地址";
 /* Title of Shared Items section */
 "sharedItems"="共享文件";
+/* 钱包铸币 */
+"Mint"="铸币";
 /* Title of the tab bar item for the Shared Items section */
 "shared"="分享";
 /* Title of the "Incoming" Shared Items. */

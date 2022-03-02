@@ -2,6 +2,7 @@
 typedef NS_ENUM (NSInteger, MegaNodeActionType) {
     MegaNodeActionTypeDownload = 0,
     MegaNodeActionTypeShare,
+    MegaNodeActionTypeMint,
     MegaNodeActionTypeCopy,
     MegaNodeActionTypeMove,
     MegaNodeActionTypeInfo,

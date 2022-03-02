@@ -556,6 +556,8 @@
 "sharedItems"="Shared Items";
 /* Title of the tab bar item for the Shared Items section */
 "shared"="Shared";
+/* 钱包铸币 */
+"Mint"="Mint";
 /* Title of the "Incoming" Shared Items. */
 "incoming"="Incoming";
 /* Title of the "Outgoing" Shared Items. */

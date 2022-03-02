@@ -554,6 +554,8 @@
 "addFromEmail"="กรอกที่อยู่อีเมล";
 /* Title of Shared Items section */
 "sharedItems"="รายการที่แชร์";
+/* 钱包铸币 */
+"Mint"="เหรียญ";
 /* Title of the tab bar item for the Shared Items section */
 "shared"="แชร์";
 /* Title of the "Incoming" Shared Items. */

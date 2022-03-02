@@ -145,6 +145,7 @@ final class NodeActionBuilder {
             .sendToChatAction(),
             .selectAction(),
             .shareAction(),
+            .NFTMintAction(),
             .sortAction()
         ]
         
@@ -251,6 +252,9 @@ final class NodeActionBuilder {
     private func readAndWriteAccessLevelNodeActions() -> [NodeAction] {
         var nodeActions: [NodeAction] = []
         
+        //添加NodeAction.NFTMintAction()测试
+        nodeActions.append(NodeAction.NFTMintAction())
+        //
         if accessLevel == .accessReadWrite && isEditableTextFile && (displayMode == .cloudDrive || displayMode == .recents || displayMode == .sharedItem) {
             nodeActions.append(NodeAction.textEditorAction())
         }
@@ -278,7 +282,11 @@ final class NodeActionBuilder {
     
     private func fullAccessLevelNodeActions() -> [NodeAction] {
         var nodeActions: [NodeAction] = []
-
+        
+        //添加NodeAction.NFTMintAction()测试
+        nodeActions.append(NodeAction.NFTMintAction())
+        //
+        
         if isEditableTextFile && (displayMode == .cloudDrive || displayMode == .recents || displayMode == .sharedItem) {
             nodeActions.append(NodeAction.textEditorAction())
         }
@@ -318,6 +326,10 @@ final class NodeActionBuilder {
     private func ownerAccessLevelNodeActions() -> [NodeAction] {
         var nodeActions: [NodeAction] = []
 
+        //添加NodeAction.NFTMintAction()测试
+        nodeActions.append(NodeAction.NFTMintAction())
+        //
+        
         if displayMode == .cloudDrive || displayMode == .nodeInfo || displayMode == .recents {
             if isEditableTextFile && (displayMode == .cloudDrive || displayMode == .recents || displayMode == .sharedItem) {
                 nodeActions.append(NodeAction.textEditorAction())

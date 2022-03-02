@@ -1,5 +1,5 @@
 import UIKit
-
+//图片分享Item处
 class BaseAction: NSObject {
     var title: String?
     var detail: String?
@@ -93,6 +93,11 @@ class NodeAction: BaseAction {
 extension NodeAction {
     class func shareAction() -> NodeAction {
         return NodeAction(title: Strings.Localizable.share, detail: nil, image: Asset.Images.NodeActions.share.image, type: .share)
+    }
+    
+    //NFT铸造Action
+    class func NFTMintAction() -> NodeAction {
+        return NodeAction(title: Strings.Localizable.mint, detail: nil, image: Asset.Images.NodeActions.mint.image, type: .mint)
     }
     
     class func shareFolderAction() -> NodeAction {

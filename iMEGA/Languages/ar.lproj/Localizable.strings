@@ -554,6 +554,8 @@
 "addFromEmail"="ادخل بريداً الكترونياً";
 /* Title of Shared Items section */
 "sharedItems"="العناصر المشاركة";
+/* 钱包铸币 */
+"Mint"="عملة";
 /* Title of the tab bar item for the Shared Items section */
 "shared"="مشاركة";
 /* Title of the "Incoming" Shared Items. */

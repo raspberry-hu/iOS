@@ -1277,6 +1277,8 @@ public enum Strings {
     public static let microphonePermissions = Strings.tr("Localizable", "microphonePermissions")
     /// Minimal
     public static let minimal = Strings.tr("Localizable", "Minimal")
+    /// Mint
+    public static let mint = Strings.tr("Localizable", "Mint")
     /// Missed call
     public static let missedCall = Strings.tr("Localizable", "missedCall")
     /// If you have misspelled your email address, correct it and click “Resend”.
