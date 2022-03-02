@@ -368,7 +368,6 @@ typedef NS_ENUM(NSInteger, MyAccount) {
                     cell.pendingView.hidden = NO;
                     cell.pendingView.clipsToBounds = YES;
                 }
-                
                 cell.pendingLabel.text = [NSString stringWithFormat:@"%tu", unseenUserAlerts];
             }
             break;
@@ -474,8 +473,17 @@ typedef NS_ENUM(NSInteger, MyAccount) {
         }
             
         case MyAccountWallet: {
-            NotificationsTableViewController *notificationsTVC = [[UIStoryboard storyboardWithName:@"Notifications" bundle:nil] instantiateViewControllerWithIdentifier:@"NotificationsTableViewControllerID"];
-            [self.navigationController pushViewController:notificationsTVC animated:YES];
+            UIViewController *detailsViewController = [[BoatDetailsInterface new] makeShipDetailsUI:@"Sarita"];
+//            [self presentModalViewController:detailsViewController animated:YES];
+//            [self.navigationController pushViewController:detailsViewController animated:YES];
+//            [self.tabBarController.tabBar setHidden:YES];
+//            [self.tabBarController.contentInset = [UIEdgeInsetsMake(0, 0, INSETHEIGHT, 0)];
+//            [self.tableView.contentInset = [UIEdgeInsetsMake(0, 0, -50, 0)]];
+//            self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -50, 0);
+//            self.hidesBottomBarWhenPushed = YES;
+            detailsViewController.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:detailsViewController animated:YES];
+            [self.navigationController pushViewController:detailsViewController animated:YES];
             break;
         }
             
