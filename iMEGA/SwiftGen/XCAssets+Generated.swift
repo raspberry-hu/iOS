@@ -551,7 +551,7 @@ internal enum Asset {
       internal static let selected = ImageAsset(name: "selected")
     }
     internal enum NodeActions {
-      internal static let mint = ImageAsset(name: "test")
+      internal static let mint = ImageAsset(name: "mint")
       internal static let copy = ImageAsset(name: "copy")
       internal static let delete = ImageAsset(name: "delete")
       internal static let edittext = ImageAsset(name: "edittext")

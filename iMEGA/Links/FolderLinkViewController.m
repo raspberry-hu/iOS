@@ -1065,6 +1065,7 @@
             break;
             
         case MegaNodeActionTypeSaveToPhotos:
+            NSLog(@"照片1");
             node = [MEGASdkManager.sharedMEGASdkFolder authorizeNode:node];
             [node mnz_saveToPhotos];
             break;

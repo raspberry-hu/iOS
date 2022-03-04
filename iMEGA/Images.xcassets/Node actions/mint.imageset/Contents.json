@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "ETH-any.png",
+      "filename" : "ETH.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "ETH-dark.png",
+      "filename" : "ETH (1)-1.svg",
       "idiom" : "universal"
     }
   ],

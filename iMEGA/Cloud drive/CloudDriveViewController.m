@@ -1578,7 +1578,7 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
 }
 
 #pragma mark - NodeActionViewControllerDelegate
-
+//Node代理
 - (void)nodeAction:(NodeActionViewController *)nodeAction didSelect:(MegaNodeActionType)action for:(MEGANode *)node from:(id)sender {
     switch (action) {
         case MegaNodeActionTypeEditTextFile: {
@@ -1586,6 +1586,16 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
             break;
         }
 
+        case MegaNodeActionTypeMint: {
+//            UIViewController *detailsViewController = [[BoatDetailsInterface new] makeShipDetailsUI:@"Sarita"];
+            UIViewController *MEGAMintNodeController = [[MEGAMintNodeInterface new] MEGAMintNodeInterfaceView];
+            
+//            detailsViewController.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:MEGAMintNodeController animated:YES];
+            [self presentModalViewController:MEGAMintNodeController animated:YES];
+            break;
+        }
+            
         case MegaNodeActionTypeDownload:
             [SVProgressHUD showImage:[UIImage imageNamed:@"hudDownload"] status:NSLocalizedString(@"downloadStarted", @"Message shown when a download starts")];
             if ([node mnz_downloadNode]) {
@@ -1659,6 +1669,7 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
         }
             
         case MegaNodeActionTypeLabel:
+            NSLog(@"Label设置0");
             [node mnz_labelActionSheetInViewController:self];
             break;
             
@@ -1719,6 +1730,7 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
             break;
             
         case MegaNodeActionTypeSaveToPhotos:
+            NSLog(@"照片5");
             [node mnz_saveToPhotos];
             break;
             

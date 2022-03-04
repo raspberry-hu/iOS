@@ -209,6 +209,7 @@ extension TextEditorViewRouter: NodeActionViewControllerDelegate {
     func nodeAction(_ nodeAction: NodeActionViewController, didSelect action: MegaNodeActionType, for node: MEGANode, from sender: Any) {
         let nodeHandle: MEGAHandle = node.handle
         switch action {
+//        case .mint: viewInfo(node: node)
         case .editTextFile: editTextFile()
         case .download: downloadToOffline()
         case .import: importNode(nodeHandle: nodeHandle)

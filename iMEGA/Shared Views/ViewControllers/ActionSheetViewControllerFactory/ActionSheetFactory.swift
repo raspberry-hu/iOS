@@ -20,6 +20,7 @@ struct ActionSheetFactory: ActionSheetFactoryProtocol {
     func nodeLabelColorView(forNode nodeHandle: MEGAHandle,
                             completion:((Result<ActionSheetViewController, NodeLabelActionDomainError>) -> Void)?) {
         nodeLabelColorActions(forNode: nodeHandle) { (actionsResult) in
+            print("颜色测试3")
             let viewControllerResult = actionsResult.map {
                 ActionSheetViewController(actions: $0, headerTitle: nil, dismissCompletion: nil, sender: nil)
             }

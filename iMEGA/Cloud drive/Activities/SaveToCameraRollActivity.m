@@ -39,6 +39,7 @@
 }
 
 - (void)performActivity {
+    NSLog(@"照片4");
     [self.node mnz_saveToPhotos];
 }
 

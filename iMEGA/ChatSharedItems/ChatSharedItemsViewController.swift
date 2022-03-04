@@ -480,6 +480,7 @@ extension ChatSharedItemsViewController: NodeActionViewControllerDelegate {
             forwardMessages([message])
             
         case .saveToPhotos:
+            print("照片10")
             node.mnz_saveToPhotos()
             
         case .download:

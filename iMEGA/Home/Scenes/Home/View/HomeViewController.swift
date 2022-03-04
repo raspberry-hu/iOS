@@ -545,6 +545,10 @@ extension HomeViewController: RecentNodeActionDelegate, TextFileEditable {
             guard let self = self else { return }
             switch action {
             
+            // MARK: mint
+//            case .mint:
+//                self.router.didTap(on: .setLabel(node))
+            
             // MARK: Text File
             case .editTextFile:
                 router?.didTap(on: .editTextFile(node))
@@ -573,6 +577,7 @@ extension HomeViewController: RecentNodeActionDelegate, TextFileEditable {
 
             // MARK: Save && Download
             case .saveToPhotos:
+                print("照片保存0")
                 self.recentsViewModel.inputs.saveToPhotoAlbum(of: node)
             case .download:
                 SVProgressHUD.show(

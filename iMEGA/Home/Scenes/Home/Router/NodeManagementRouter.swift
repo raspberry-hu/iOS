@@ -42,6 +42,7 @@ final class NodeManagementRouter: NSObject {
                 break // not implemented, save for later to define.
             case .success(let actionSheetViewController):
                 navigationController?.present(actionSheetViewController, animated: true, completion: nil)
+                print("设置颜色测试2")
             }
         }
     }

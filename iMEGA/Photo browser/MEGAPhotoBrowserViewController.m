@@ -805,6 +805,7 @@ static const long long MinSizeToRequestThePreview = 1 * 1024 * 1024; // 1 MB. Do
     if (node == nil) {
         return;
     }
+    NSLog(@"照片7");
     [node mnz_saveToPhotos];
 }
 
@@ -870,6 +871,7 @@ static const long long MinSizeToRequestThePreview = 1 * 1024 * 1024; // 1 MB. Do
     
     switch (self.displayMode) {
         case DisplayModeFileLink:
+            NSLog(@"照片8");
             [node mnz_saveToPhotos];
             break;
             
@@ -1230,6 +1232,7 @@ static const long long MinSizeToRequestThePreview = 1 * 1024 * 1024; // 1 MB. Do
             break;
             
         case MegaNodeActionTypeSaveToPhotos:
+            NSLog(@"照片9");
             [node mnz_saveToPhotos];
             break;
             

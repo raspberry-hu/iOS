@@ -38,6 +38,7 @@ final class FileLinkActionViewControllerDelegate: NSObject, NodeActionViewContro
     }
     
     private func saveToPhotos(node: MEGANode) {
+        print("照片13")
         node.mnz_saveToPhotos()
     }
     

@@ -451,6 +451,7 @@
             break;
             
         case MegaNodeActionTypeSaveToPhotos:
+            NSLog(@"照片3");
             [node mnz_saveToPhotos];
             break;
             

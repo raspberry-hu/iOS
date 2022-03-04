@@ -172,7 +172,7 @@ extension ChatViewController {
                    let authorizedNode = sdk.authorizeChatNode(node, cauth: chatRoom.authorizationToken)  {
                     node = authorizedNode
                 }
-                
+                print("照片11")
                 node.mnz_saveToPhotos()
             } else {
                 MEGALogDebug("Wrong Message type to be saved to album")

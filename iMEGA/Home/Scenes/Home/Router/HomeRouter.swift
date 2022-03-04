@@ -41,6 +41,8 @@ enum HomeRoutingSource {
     case setLabel(MEGANode)
     case editTextFile(MEGANode)
     case viewTextFileVersions(MEGANode)
+    //MARK: mint
+//    case mint(MEGANode)
 }
 
 final class HomeRouter: HomeRouterProtocol {
@@ -83,6 +85,7 @@ final class HomeRouter: HomeRouterProtocol {
     func didTap(on source: HomeRoutingSource, with object: Any? = nil) {
         switch source {
 
+        //MARK: mint
         case .avatar:
             routeToAccount(with: navigationController)
         case .uploadButton:
@@ -123,6 +126,7 @@ final class HomeRouter: HomeRouterProtocol {
         case .delete(let node):
             nodeManageRouter.showMoveToRubbishBin(for: node)
         case .setLabel(let node):
+            print("颜色测试1")
             nodeManageRouter.showLabelColorAction(for: node)
         case .editTextFile(let node):
             nodeManageRouter.showEditTextFile(for: node)

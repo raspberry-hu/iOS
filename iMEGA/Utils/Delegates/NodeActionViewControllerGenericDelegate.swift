@@ -12,6 +12,14 @@ final class NodeActionViewControllerGenericDelegate:
     func nodeAction(_ nodeAction: NodeActionViewController, didSelect action: MegaNodeActionType, for node: MEGANode, from sender: Any) {
         guard let viewController = viewController else { return }
         switch action {
+        //铸币操作
+//        case .mint:
+//            debugPrint("铸币操作")
+//            print("铸币操作")
+//            showNodeInfo(node)
+//            node.mnz_labelActionSheet(in: viewController)
+//            showEditTextFile(for: node)
+        //
         case .editTextFile:
             showEditTextFile(for: node)
             
@@ -85,6 +93,7 @@ final class NodeActionViewControllerGenericDelegate:
         case .sendToChat:
             node.mnz_sendToChat(in: viewController)
         case .saveToPhotos:
+            print("照片12")
             node.mnz_saveToPhotos()
         case .favourite:
             let nodefavouriteActionUseCase =  NodeFavouriteActionUseCase(nodeFavouriteRepository: NodeFavouriteActionRepository(sdk: MEGASdkManager.sharedMEGASdk()))

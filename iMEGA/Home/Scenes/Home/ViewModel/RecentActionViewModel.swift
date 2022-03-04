@@ -32,6 +32,7 @@ final class HomeRecentActionViewModel:
         devicePermissionUseCase.getAlbumAuthorizationStatus { [weak self] photoAuthorization in
             switch photoAuthorization {
             case .authorized:
+                print("照片0")
                 node.mnz_saveToPhotos()
             default:
                 guard let self = self else { return }

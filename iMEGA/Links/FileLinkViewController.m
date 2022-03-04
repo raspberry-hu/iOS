@@ -327,6 +327,7 @@
 }
 
 - (void)saveToPhotos {
+    NSLog(@"照片2");
     [self.node mnz_saveToPhotos];
 }
 

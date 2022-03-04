@@ -1057,6 +1057,12 @@
 		83FEA8B625C1B3990063A560 /* FolderLinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */; };
 		83FF502F247E86CD00EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
 		83FF5030247E86F600EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
+		856EE08F27D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
+		856EE09027D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
+		856EE09127D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
+		856EE09527D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
+		856EE09627D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
+		856EE09727D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
 		85CEB9FC27CF5016007F27E5 /* walletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEB9FB27CF5016007F27E5 /* walletView.swift */; };
 		85CEB9FE27CF502C007F27E5 /* walletInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEB9FD27CF502C007F27E5 /* walletInterface.swift */; };
 		9411354F1F00FD1500D33428 /* Cloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415226691A692ECC00EC7BB6 /* Cloud.storyboard */; };
@@ -3341,6 +3347,8 @@
 		83FB1438219C372800418BE6 /* MOOfflineFolderLayout+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MOOfflineFolderLayout+CoreDataProperties.m"; sourceTree = "<group>"; };
 		83FEA8B125C1B3970063A560 /* FolderLinkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkCollectionViewController.swift; sourceTree = "<group>"; };
 		83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkTableViewController.swift; sourceTree = "<group>"; };
+		856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNode.swift; sourceTree = "<group>"; };
+		856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNodeInterface.swift; sourceTree = "<group>"; };
 		85CEB9FB27CF5016007F27E5 /* walletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletView.swift; sourceTree = "<group>"; };
 		85CEB9FD27CF502C007F27E5 /* walletInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletInterface.swift; sourceTree = "<group>"; };
 		9419B6BE1F20D1D700FEBE31 /* MEGAIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGAIndexer.h; path = Spotlight/MEGAIndexer.h; sourceTree = "<group>"; };
@@ -5549,6 +5557,8 @@
 				C4575F2B265FA2B800D527DC /* DispatchQueue+Additions.swift */,
 				C4EDB733266550A5006A114F /* UIFont+Additions.swift */,
 				C44080B4273580AF00E3EDDE /* UIViewController+Backup.swift */,
+				856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */,
+				856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -11031,6 +11041,7 @@
 				B6D176872236F16600098084 /* ImageExporter.m in Sources */,
 				B658D3CF218FBC47004C0D64 /* UploadOperationFactory.m in Sources */,
 				5B7B4CA21EE5AC1200DA6A8D /* MEGAInviteContactRequestDelegate.m in Sources */,
+				856EE09527D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				B66709902228BCE90015E050 /* PHFetchOptions+CameraUpload.m in Sources */,
 				5D56820B252FEC9800FE7F9C /* Reader+GroupingSorting.swift in Sources */,
 				2F6F088E253E387600C5B5D7 /* TransfersWidgetViewController.m in Sources */,
@@ -11168,6 +11179,7 @@
 				5BFA9630252E1119003653EB /* ManageChatHistoryRepository.swift in Sources */,
 				5D8A76F124FCD0C900C0610C /* MEGAAvatarGeneratingUseCase.swift in Sources */,
 				BFB463DD2432F2E900FB90B9 /* ChatRoomDelegate.swift in Sources */,
+				856EE08F27D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				41AC66481AB1D493003FE8DA /* AboutTableViewController.m in Sources */,
 				5D4ACA082533259600935FC9 /* TableDataSourceConfigurationFactory.swift in Sources */,
 				2FD6A32A2574A73500C1997E /* PasteImagePreviewView.swift in Sources */,
@@ -12418,6 +12430,7 @@
 				832F19ED2091BD8E0067679E /* MOMediaDestination+CoreDataProperties.m in Sources */,
 				C482B7CF271F33630074CFC4 /* RequestDelegate.swift in Sources */,
 				831D61A9218738F30038F5B8 /* MOFolderLayout+CoreDataProperties.m in Sources */,
+				856EE09627D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				A82D5CE226BC083500E73D27 /* PreferenceRepository.swift in Sources */,
 				9456054B1EDD7AD70094EF0F /* LTHPasscodeViewController.m in Sources */,
 				83B906BE249A29EC0088F15C /* UIButton+Additions.swift in Sources */,
@@ -12430,6 +12443,7 @@
 				942255091EDC04CD0074C51A /* DocumentPickerViewController.m in Sources */,
 				9456054D1EDD7DB20094EF0F /* RemoveLinkActivity.m in Sources */,
 				B604890F223C4F7A00BA91F9 /* MEGACoreDataStack.m in Sources */,
+				856EE09027D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				7747B2D9208625B50011814E /* Reachability.m in Sources */,
 				BF22BFB6268ACFAD00460DB3 /* TransferRecordDTO.swift in Sources */,
 				5B367577204FFC150087362D /* SendToChatActivity.m in Sources */,
@@ -12594,6 +12608,7 @@
 				5BE689942417CC2100462134 /* SelectableTableViewCell.m in Sources */,
 				A82D5CDD26BC07A900E73D27 /* PreferenceRepositoryProtocol.swift in Sources */,
 				B6990181262F92A800176FFC /* UncaughtExceptionHandler.swift in Sources */,
+				856EE09127D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				77892E9D20E5012C0020A533 /* ChatRoomCell.m in Sources */,
 				C42C357A2743D96E004D8BA9 /* NodeLoadOperation.swift in Sources */,
 				77D7E853243719E0005D2795 /* MEGAFunctions.swift in Sources */,
@@ -12675,6 +12690,7 @@
 				C46517B0272C9F12004F27A0 /* MEGANode+Mapper.swift in Sources */,
 				C42C35762743D8E3004D8BA9 /* BackupRootNodeAccess.swift in Sources */,
 				941135641F01071600D33428 /* NSString+MNZCategory.m in Sources */,
+				856EE09727D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				BFE54779231F0F29007FB8F6 /* UIViewController+MNZCategory.m in Sources */,
 				A81DF3602508FE23009C8B60 /* Date+Formatting.swift in Sources */,
 				2F25A2DD240C92C1005EF524 /* StorageFullModalAlertViewController.swift in Sources */,

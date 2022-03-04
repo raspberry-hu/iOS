@@ -230,7 +230,8 @@ extension NodeAction {
         let labelString = MEGANode.string(for: label)
         let detailText = NSLocalizedString(labelString!, comment: "")
         let image = UIImage(named: labelString!)
-        
+        //测试
+        print("设置颜色测试4")
         return NodeAction(title: Strings.Localizable.CloudDrive.Sort.label, detail: (label != .unknown ? detailText : nil), accessoryView: (label != .unknown ? UIImageView(image: image) : UIImageView(image: Asset.Images.Generic.standardDisclosureIndicator.image)), image: Asset.Images.NodeActions.label.image, type: .label)
     }
     

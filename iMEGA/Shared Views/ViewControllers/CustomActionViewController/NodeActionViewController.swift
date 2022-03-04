@@ -88,6 +88,8 @@ class NodeActionViewController: ActionSheetViewController {
         let isMediaFile = node.isFile() && isImageOrVideoFile && node.mnz_isPlayable()
         let isEditableTextFile = node.isFile() && node.name?.mnz_isEditableTextFilePathExtension == true
         self.actions = NodeActionBuilder()
+            //mint设置
+            .setMintLabel(node.label)
             .setDisplayMode(displayMode)
             .setAccessLevel(MEGASdkManager.sharedMEGASdk().accessLevel(for: node))
             .setIsMediaFile(isMediaFile)

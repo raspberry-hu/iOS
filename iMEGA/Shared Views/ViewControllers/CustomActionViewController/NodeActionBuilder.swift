@@ -20,6 +20,11 @@ final class NodeActionBuilder {
     private var isBackupFolder: Bool = false
     private var isInVersionsView: Bool = false
     private var viewMode: ViewModePreference = .list
+    
+    func setMintLabel(_ label: MEGANodeLabel) -> NodeActionBuilder {
+        self.label = label
+        return self
+    }
 
     func setDisplayMode(_ displayMode: DisplayMode) -> NodeActionBuilder {
         self.displayMode = displayMode
@@ -140,12 +145,13 @@ final class NodeActionBuilder {
     
     private func folderLinkNodeActions() -> [NodeAction] {
         var nodeActions: [NodeAction] = [
+            //mint
+            .NFTMintAction(),
             .importAction(),
             .downloadAction(),
             .sendToChatAction(),
             .selectAction(),
             .shareAction(),
-            .NFTMintAction(),
             .sortAction()
         ]
         
