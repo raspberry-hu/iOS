@@ -1587,11 +1587,8 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
         }
 
         case MegaNodeActionTypeMint: {
-//            UIViewController *detailsViewController = [[BoatDetailsInterface new] makeShipDetailsUI:@"Sarita"];
-            UIViewController *MEGAMintNodeController = [[MEGAMintNodeInterface new] MEGAMintNodeInterfaceView];
-            
-//            detailsViewController.hidesBottomBarWhenPushed = YES;
-//            [self.navigationController pushViewController:MEGAMintNodeController animated:YES];
+            //Mega测试，文件
+            UIViewController *MEGAMintNodeController = [[MEGAMintNodeInterface new] MEGAMintNodeInterfaceView: node];
             [self presentModalViewController:MEGAMintNodeController animated:YES];
             break;
         }

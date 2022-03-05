@@ -9,7 +9,11 @@
 import SwiftUI
 
 struct MEGAMintNode: View {
+    var node = MEGANode()
     var body: some View {
-        Text("铸币")
+        VStack {
+            Text(node.base64Handle ?? "No Base64")
+            Text(node.name ?? "No Name")
+        }
     }
 }

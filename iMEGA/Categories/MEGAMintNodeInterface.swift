@@ -10,9 +10,11 @@ import Foundation
 import SwiftUI
 @objc
 class MEGAMintNodeInterface: NSObject {
- 
-    @objc func MEGAMintNodeInterfaceView() -> UIViewController{
-        let details = MEGAMintNode()
+//    var node = MEGANode()
+
+    @objc func MEGAMintNodeInterfaceView(_ node: MEGANode) -> UIViewController{
+        let details = MEGAMintNode(node: node)
         return UIHostingController(rootView: details)
     }
 }
+
