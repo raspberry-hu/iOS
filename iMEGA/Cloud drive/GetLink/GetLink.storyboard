@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDc-Jv-Ltn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDc-Jv-Ltn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +44,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GetLinkInfoTableViewCell" id="GTL-RU-0LD" customClass="GetLinkInfoTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="60.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GTL-RU-0LD" id="gPt-eh-z56">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
@@ -108,7 +108,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GetLinkSwitchOptionTableViewCell" id="gDP-WK-755" customClass="GetLinkSwitchOptionTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="85" width="414" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="105" width="414" height="44.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDP-WK-755" id="9MV-dt-VqW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
@@ -181,7 +181,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GetLinkDetailTableViewCell" id="5T7-je-eaT" customClass="GetLinkDetailTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="129.5" width="414" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="149.5" width="414" height="46.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5T7-je-eaT" id="NYC-zB-jae">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
@@ -251,7 +251,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GetLinkDatePickerTableViewCell" id="mbL-lK-GRh" customClass="GetLinkDatePickerTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="176" width="414" height="216.5"/>
+                                        <rect key="frame" x="0.0" y="196" width="414" height="216.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mbL-lK-GRh" id="BpH-6O-PPE">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="216.5"/>
@@ -277,7 +277,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GetLinkStringTableViewCell" id="dWi-Ba-X8o" customClass="GetLinkStringTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="392.5" width="414" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="412.5" width="414" height="67.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWi-Ba-X8o" id="q5D-yq-sjJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
@@ -351,7 +351,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GetLinkPasswordTableViewCell" rowHeight="70.5" id="uNE-R6-QgM" customClass="GetLinkPasswordTableViewCell" customModule="MEGA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="460" width="414" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="480" width="414" height="70.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uNE-R6-QgM" id="OfS-bb-7Qy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
@@ -465,7 +465,7 @@
                                     <constraint firstAttribute="height" constant="0.5" id="vub-7b-fr3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-aW-ho5" customClass="PasswordView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-aW-ho5" customClass="PasswordView">
                                 <rect key="frame" x="0.0" y="122.5" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="622" id="aL6-8T-CEQ"/>
@@ -485,7 +485,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ha-My-TYX">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ha-My-TYX">
                                 <rect key="frame" x="0.0" y="182.5" width="414" height="0.0"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egl-Wo-zqw" userLabel="Separator View">
@@ -512,13 +512,13 @@
                                     <constraint firstItem="egl-Wo-zqw" firstAttribute="top" secondItem="3ha-My-TYX" secondAttribute="top" id="xCN-rp-V2V"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUC-tX-eaD" userLabel="Separator View">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUC-tX-eaD" userLabel="Separator View">
                                 <rect key="frame" x="16" y="182.5" width="398" height="0.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="8gS-gc-sdy"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-kL-AFi" customClass="PasswordView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-kL-AFi" customClass="PasswordView">
                                 <rect key="frame" x="0.0" y="183" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="622" id="btT-pQ-BCr"/>
@@ -538,13 +538,13 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axH-4X-UMh" userLabel="Separator View">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axH-4X-UMh" userLabel="Separator View">
                                 <rect key="frame" x="0.0" y="243" width="414" height="0.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="za3-rQ-Ehf"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2b-al-JvY" userLabel="EncryptView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2b-al-JvY" userLabel="EncryptView">
                                 <rect key="frame" x="0.0" y="269.5" width="414" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-8W-KB4" userLabel="Separator View">

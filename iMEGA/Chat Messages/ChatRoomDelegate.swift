@@ -588,9 +588,18 @@ class ChatRoomDelegate: NSObject, MEGAChatRoomDelegate, MEGAChatRequestDelegate 
                         guard let chatID = tempAppDataComponent.components(separatedBy: "=").last else {
                             return false
                         }
-                        if UInt64(chatID) == chatRoom.chatId {
-                            return true
+//                        if UInt64(chatID) == chatRoom.chatId {
+//                            return true
+//                        }
+//UInt64修改
+                        do {
+                            if try UInt64(chatID) == chatRoom.chatId {
+                                return true
+                            }
+                        } catch let error as NSError {
+                            print("UInt64修改失败: \(error.localizedDescription)")
                         }
+                        //
                     }
                 }
             }

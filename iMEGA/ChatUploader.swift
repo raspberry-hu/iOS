@@ -58,11 +58,22 @@
         context.performAndWait {
             MEGALogInfo("[ChatUploader] inserted new entry File path \(filepath)")
             // insert into database only if the duplicate path does not exsist - "allowDuplicateFilePath" parameter
-            self.store.insertChatUploadTransfer(withFilepath: filepath,
-                                                chatRoomId: String(chatRoomId),
-                                                transferTag: nil,
-                                                allowDuplicateFilePath: false,
-                                                context: context)
+//            self.store.insertChatUploadTransfer(withFilepath: filepath,
+//                                                chatRoomId: String(chatRoomId),
+//                                                transferTag: nil,
+//                                                allowDuplicateFilePath: false,
+//                                                context: context)
+            //UInt64修改
+            do {
+                try self.store.insertChatUploadTransfer(withFilepath: filepath,
+                                                    chatRoomId: String(chatRoomId),
+                                                    transferTag: nil,
+                                                    allowDuplicateFilePath: false,
+                                                    context: context)
+            } catch let error as NSError {
+                print("UInt64修改失败: \(error.localizedDescription)")
+            }
+            //
             
             MEGALogInfo("[ChatUploader] SDK upload started for File path \(filepath)")
             MEGASdkManager.sharedMEGASdk().startUploadForChat(withLocalPath: filepath,
@@ -191,9 +202,18 @@ extension ChatUploader: MEGATransferDelegate {
             }
             
             if (error.type == .apiEExist) {
-                self.store.deleteChatUploadTransfer(withChatRoomId: chatRoomIdString,
-                                               transferTag: String(transfer.tag),
-                                               context: context)
+//                self.store.deleteChatUploadTransfer(withChatRoomId: chatRoomIdString,
+//                                               transferTag: String(transfer.tag),
+//                                               context: context)
+                //UInt64修改
+                do {
+                    try self.store.deleteChatUploadTransfer(withChatRoomId: chatRoomIdString,
+                                                            transferTag: String(transfer.tag),
+                                                            context: context)
+                } catch let error as NSError {
+                    print("UInt64修改失败: \(error.localizedDescription)")
+                }
+                //
                 MEGALogInfo("[ChatUploader] transfer has started with exactly the same data (local path and target parent). File: %@", transfer.fileName);
                 return;
             }
@@ -202,12 +222,24 @@ extension ChatUploader: MEGATransferDelegate {
             
             transfer.mnz_moveFileToDestinationIfVoiceClipData()
             context.performAndWait {
-                self.store.updateChatUploadTransfer(filepath: transfer.path,
-                                                    chatRoomId: chatRoomIdString,
-                                                    nodeHandle: String(transfer.nodeHandle),
-                                                    transferTag: String(transfer.tag),
-                                                    appData: transfer.appData,
-                                                    context: context)
+//                self.store.updateChatUploadTransfer(filepath: transfer.path,
+//                                                    chatRoomId: chatRoomIdString,
+//                                                    nodeHandle: String(transfer.nodeHandle),
+//                                                    transferTag: String(transfer.tag),
+//                                                    appData: transfer.appData,
+//                                                    context: context)
+                //UInt64修改
+                            do {
+                                try self.store.updateChatUploadTransfer(filepath: transfer.path,
+                                                                                    chatRoomId: chatRoomIdString,
+                                                                                    nodeHandle: String(transfer.nodeHandle),
+                                                                                    transferTag: String(transfer.tag),
+                                                                                    appData: transfer.appData,
+                                                                                    context: context)
+                            } catch let error as NSError {
+                                print("UInt64修改失败: \(error.localizedDescription)")
+                            }
+                //
                 self.updateDatabase(withChatRoomIdString: chatRoomIdString, context: context)
             }
         }

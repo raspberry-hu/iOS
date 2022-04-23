@@ -15,6 +15,8 @@ abstract_target 'iMEGA' do
 
   target 'MEGA' do
     # Pods for MEGA
+    pod 'web3swift', :git => 'https://github.com/skywinder/web3swift.git' 
+    pod 'iMonitorMyFiles', '~> 0.1.0'
     pod 'MessageKit'
     pod 'PanModal', :git => 'https://github.com/ilia3546/PanModal.git', :commit => 'ba721e8'
     pod 'FlexLayout'

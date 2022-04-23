@@ -292,6 +292,7 @@
 
 - (BOOL)mnz_downloadNodeWithApi:(MEGASdk *)api isTopPriority:(BOOL)isTopPriority {
     if ([MEGAReachabilityManager isReachableHUDIfNot]) {
+//        NSLog(@"测试是否为判断本地的函数");
         BOOL isFolderLink = api != [MEGASdkManager sharedMEGASdk];
         if ([Helper isFreeSpaceEnoughToDownloadNode:self isFolderLink:isFolderLink]) {
             [Helper downloadNode:self folderPath:[Helper relativePathForOffline] isFolderLink:isFolderLink isTopPriority:isTopPriority];
@@ -305,13 +306,48 @@
 }
 
 //沙盒图片读取
-- (void)mnz_readPhotos {
-    NSLog(@"照片读取1");
+//- (void)mnz_readPhotos {
+//    NSLog(@"照片读取1");
+//    [DevicePermissionsHelper photosPermissionWithCompletionHandler:^(BOOL granted) {
+//        if (granted) {
+//            [SVProgressHUD showImage:[UIImage imageNamed:@"saveToPhotos"] status:NSLocalizedString(@"Saving to Photos…", @"Text shown when starting the process to save a photo or video to Photos app")];
+//            [SVProgressHUD dismissWithDelay:1.0];
+//            //临时目录
+//            NSString *temporaryPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:self.base64Handle] stringByAppendingPathComponent:self.name];
+//            NSString *temporaryFingerprint = [MEGASdkManager.sharedMEGASdk fingerprintForFilePath:temporaryPath];
+//            if ([temporaryFingerprint isEqualToString:self.fingerprint]) {
+//                [self mnz_copyToGalleryFromTemporaryPath:temporaryPath];
+//            } else if (MEGAReachabilityManager.isReachableHUDIfNot) {
+//                NSString *downloadsDirectory = [NSFileManager.defaultManager downloadsDirectory];
+//                downloadsDirectory = downloadsDirectory.mnz_relativeLocalPath;
+//                NSLog(@"打印地址");
+//                NSLog(@"%@", downloadsDirectory);
+//                NSString *offlineNameString = [MEGASdkManager.sharedMEGASdkFolder escapeFsIncompatible:self.name destinationPath:[NSHomeDirectory() stringByAppendingString:@"/"]];
+//                NSLog(@"打印离线名称");
+//                NSLog(@"%@", offlineNameString);
+//                NSString *localPath = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
+//                NSLog(@"打印本地地址");
+//                NSLog(@"%@", localPath);
+//                [MEGASdkManager.sharedMEGASdk startDownloadNode:self localPath:localPath appData:[[NSString new] mnz_appDataToSaveInPhotosApp]];
+//                NSLog(@"照片保存成功");
+//                NSFileManager *manager = [NSFileManager defaultManager];
+//                if([manager fileExistsAtPath:localPath]) {
+//                    NSLog(@"照片读取成功");
+//                } else {
+//                    NSLog(@"照片读取失败");
+//                }
+//            }
+//        } else {
+//            [DevicePermissionsHelper alertPhotosPermission];
+//        }
+//    }];
+//}
+
+- (void)mnz_saveToPhotos {
     [DevicePermissionsHelper photosPermissionWithCompletionHandler:^(BOOL granted) {
         if (granted) {
             [SVProgressHUD showImage:[UIImage imageNamed:@"saveToPhotos"] status:NSLocalizedString(@"Saving to Photos…", @"Text shown when starting the process to save a photo or video to Photos app")];
             [SVProgressHUD dismissWithDelay:1.0];
-            //临时目录
             NSString *temporaryPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:self.base64Handle] stringByAppendingPathComponent:self.name];
             NSString *temporaryFingerprint = [MEGASdkManager.sharedMEGASdk fingerprintForFilePath:temporaryPath];
             if ([temporaryFingerprint isEqualToString:self.fingerprint]) {
@@ -319,22 +355,10 @@
             } else if (MEGAReachabilityManager.isReachableHUDIfNot) {
                 NSString *downloadsDirectory = [NSFileManager.defaultManager downloadsDirectory];
                 downloadsDirectory = downloadsDirectory.mnz_relativeLocalPath;
-                NSLog(@"打印地址");
-                NSLog(@"%@", downloadsDirectory);
                 NSString *offlineNameString = [MEGASdkManager.sharedMEGASdkFolder escapeFsIncompatible:self.name destinationPath:[NSHomeDirectory() stringByAppendingString:@"/"]];
-                NSLog(@"打印离线名称");
-                NSLog(@"%@", offlineNameString);
                 NSString *localPath = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
-                NSLog(@"打印本地地址");
-                NSLog(@"%@", localPath);
                 [MEGASdkManager.sharedMEGASdk startDownloadNode:self localPath:localPath appData:[[NSString new] mnz_appDataToSaveInPhotosApp]];
                 NSLog(@"照片保存成功");
-                NSFileManager *manager = [NSFileManager defaultManager];
-                if([manager fileExistsAtPath:localPath]) {
-                    NSLog(@"照片读取成功");
-                } else {
-                    NSLog(@"照片读取失败");
-                }
             }
         } else {
             [DevicePermissionsHelper alertPhotosPermission];
@@ -342,70 +366,30 @@
     }];
 }
 
-- (void)mnz_saveToPhotos {
-    NSLog(@"照片保存1");
-    [DevicePermissionsHelper photosPermissionWithCompletionHandler:^(BOOL granted) {
-        if (granted) {
-            [SVProgressHUD showImage:[UIImage imageNamed:@"saveToPhotos"] status:NSLocalizedString(@"Saving to Photos…", @"Text shown when starting the process to save a photo or video to Photos app")];
-            [SVProgressHUD dismissWithDelay:1.0];
-            //临时目录
-            NSString *temporaryPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:self.base64Handle] stringByAppendingPathComponent:self.name];
-            NSString *temporaryFingerprint = [MEGASdkManager.sharedMEGASdk fingerprintForFilePath:temporaryPath];
-            if ([temporaryFingerprint isEqualToString:self.fingerprint]) {
-                [self mnz_copyToGalleryFromTemporaryPath:temporaryPath];
-            } else if (MEGAReachabilityManager.isReachableHUDIfNot) {
-                NSString *downloadsDirectory = [NSFileManager.defaultManager downloadsDirectory];
-                downloadsDirectory = downloadsDirectory.mnz_relativeLocalPath;
-                NSLog(@"打印地址");
-                NSLog(@"%@", downloadsDirectory);
-                NSString *offlineNameString = [MEGASdkManager.sharedMEGASdkFolder escapeFsIncompatible:self.name destinationPath:[NSHomeDirectory() stringByAppendingString:@"/"]];
-                NSLog(@"打印离线名称");
-                NSLog(@"%@", offlineNameString);
-                NSString *localPath = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
-                NSLog(@"打印本地地址");
-                NSLog(@"%@", localPath);
-                //目录遍历
-                //
-                NSArray *libPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-                NSString *libraryPath = [libPaths firstObject];
-                NSLog(@"LibraryPath = %@",libraryPath);
-                NSString *str = [libraryPath lastPathComponent];
-                NSLog(@"%@",str);
-                NSString *string = [libraryPath stringByDeletingLastPathComponent];
-                NSLog(@"去尾%@", string);
-                NSString *addString = [string stringByAppendingPathComponent:localPath];
-                NSLog(@"本地路径=%@", addString);
-                NSLog(@"%@", localPath);
-                NSFileManager *manager = [NSFileManager defaultManager];
-//                NSString *BASE_PATH = [localPath stringByDeletingLastPathComponent];
-                NSString *BASE_PATH = libraryPath;
-                NSLog(@"download路径 = %@", BASE_PATH);
-                NSDirectoryEnumerator *myDirectoryEnumerator = [manager enumeratorAtPath:BASE_PATH];
-                BOOL isDir = NO;
-                BOOL isExist = NO;
-                for (NSString *paths in myDirectoryEnumerator.allObjects) {
-                    NSLog(@"%@", paths);
-                    isExist = [manager fileExistsAtPath:[NSString stringWithFormat:@"%@/%@", BASE_PATH, paths] isDirectory:&isDir];
-                    if (isDir) {
-                        NSLog(@"%@", paths);
-                    } else {
-                        NSLog(@"%@", paths);
-                    }
-                }
-                if([manager fileExistsAtPath:addString]) {
-                    NSLog(@"照片读取成功1");
-                } else {
-                    NSLog(@"照片读取失败1");
-                }
-                if([manager fileExistsAtPath:localPath]) {
-                    NSLog(@"照片读取成功2");
-                } else {
-                    NSLog(@"照片读取失败2");
-                }
-                //
-                [MEGASdkManager.sharedMEGASdk startDownloadNode:self localPath:localPath appData:[[NSString new] mnz_appDataToSaveInPhotosApp]];
-                NSLog(@"照片保存成功");
-                //图片读取
+//- (void)mnz_saveToPhotos {
+//    NSLog(@"照片保存1");
+//    [DevicePermissionsHelper photosPermissionWithCompletionHandler:^(BOOL granted) {
+//        if (granted) {
+//            [SVProgressHUD showImage:[UIImage imageNamed:@"saveToPhotos"] status:NSLocalizedString(@"Saving to Photos…", @"Text shown when starting the process to save a photo or video to Photos app")];
+//            [SVProgressHUD dismissWithDelay:1.0];
+//            //临时目录
+//            NSString *temporaryPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:self.base64Handle] stringByAppendingPathComponent:self.name];
+//            NSString *temporaryFingerprint = [MEGASdkManager.sharedMEGASdk fingerprintForFilePath:temporaryPath];
+//            if ([temporaryFingerprint isEqualToString:self.fingerprint]) {
+//                [self mnz_copyToGalleryFromTemporaryPath:temporaryPath];
+//            } else if (MEGAReachabilityManager.isReachableHUDIfNot) {
+//                NSString *downloadsDirectory = [NSFileManager.defaultManager downloadsDirectory];
+//                downloadsDirectory = downloadsDirectory.mnz_relativeLocalPath;
+//                NSLog(@"打印地址");
+//                NSLog(@"%@", downloadsDirectory);
+//                NSString *offlineNameString = [MEGASdkManager.sharedMEGASdkFolder escapeFsIncompatible:self.name destinationPath:[NSHomeDirectory() stringByAppendingString:@"/"]];
+//                NSLog(@"打印离线名称");
+//                NSLog(@"%@", offlineNameString);
+//                NSString *localPath = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
+//                NSLog(@"打印本地地址");
+//                NSLog(@"%@", localPath);
+//                //目录遍历
+//                //
 //                NSArray *libPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
 //                NSString *libraryPath = [libPaths firstObject];
 //                NSLog(@"LibraryPath = %@",libraryPath);
@@ -417,20 +401,60 @@
 //                NSLog(@"本地路径=%@", addString);
 //                NSLog(@"%@", localPath);
 //                NSFileManager *manager = [NSFileManager defaultManager];
-//                if([manager fileExistsAtPath:addString]) {
-//                    NSLog(@"照片读取成功");
-//                } else {
-//                    NSLog(@"照片读取失败");
+////                NSString *BASE_PATH = [localPath stringByDeletingLastPathComponent];
+//                NSString *BASE_PATH = libraryPath;
+//                NSLog(@"download路径 = %@", BASE_PATH);
+//                NSDirectoryEnumerator *myDirectoryEnumerator = [manager enumeratorAtPath:BASE_PATH];
+//                BOOL isDir = NO;
+//                BOOL isExist = NO;
+//                for (NSString *paths in myDirectoryEnumerator.allObjects) {
+//                    NSLog(@"%@", paths);
+//                    isExist = [manager fileExistsAtPath:[NSString stringWithFormat:@"%@/%@", BASE_PATH, paths] isDirectory:&isDir];
+//                    if (isDir) {
+//                        NSLog(@"%@", paths);
+//                    } else {
+//                        NSLog(@"%@", paths);
+//                    }
 //                }
-//                NSString *localPath1 = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
-//                NSLog(@"打印本地地址1");
-//                NSLog(@"%@", localPath1);
-            }
-        } else {
-            [DevicePermissionsHelper alertPhotosPermission];
-        }
-    }];
-}
+//                if([manager fileExistsAtPath:addString]) {
+//                    NSLog(@"照片读取成功1");
+//                } else {
+//                    NSLog(@"照片读取失败1");
+//                }
+//                if([manager fileExistsAtPath:localPath]) {
+//                    NSLog(@"照片读取成功2");
+//                } else {
+//                    NSLog(@"照片读取失败2");
+//                }
+//                //
+//                [MEGASdkManager.sharedMEGASdk startDownloadNode:self localPath:localPath appData:[[NSString new] mnz_appDataToSaveInPhotosApp]];
+//                NSLog(@"照片保存成功");
+//                //图片读取
+////                NSArray *libPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+////                NSString *libraryPath = [libPaths firstObject];
+////                NSLog(@"LibraryPath = %@",libraryPath);
+////                NSString *str = [libraryPath lastPathComponent];
+////                NSLog(@"%@",str);
+////                NSString *string = [libraryPath stringByDeletingLastPathComponent];
+////                NSLog(@"去尾%@", string);
+////                NSString *addString = [string stringByAppendingPathComponent:localPath];
+////                NSLog(@"本地路径=%@", addString);
+////                NSLog(@"%@", localPath);
+////                NSFileManager *manager = [NSFileManager defaultManager];
+////                if([manager fileExistsAtPath:addString]) {
+////                    NSLog(@"照片读取成功");
+////                } else {
+////                    NSLog(@"照片读取失败");
+////                }
+////                NSString *localPath1 = [downloadsDirectory stringByAppendingPathComponent:offlineNameString];
+////                NSLog(@"打印本地地址1");
+////                NSLog(@"%@", localPath1);
+//            }
+//        } else {
+//            [DevicePermissionsHelper alertPhotosPermission];
+//        }
+//    }];
+//}
 
 - (void)mnz_renameNodeInViewController:(UIViewController *)viewController {
     [self mnz_renameNodeInViewController:viewController completion:nil];

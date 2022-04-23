@@ -36,7 +36,7 @@
 }
 
 - (NSString *)activityTitle {
-    return NSLocalizedString(@"sendToContact", @"");
+    return NSLocalizedString(@"Mint", @"");
 }
 
 - (UIImage *)activityImage {

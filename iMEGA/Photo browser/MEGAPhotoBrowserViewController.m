@@ -383,7 +383,7 @@ static const long long MinSizeToRequestThePreview = 1 * 1024 * 1024; // 1 MB. Do
 }
 
 #pragma mark - Private
-
+//文件分享
 - (void)shareFileLink {
     NSString *link = self.encryptedLink ? self.encryptedLink : self.publicLink;
     

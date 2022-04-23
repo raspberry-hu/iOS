@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CRYPTO_CURRENCY_UPDATE</key>
+	<string>$(CRYPTO_CURRENCY_UPDATE)</string>
+	<key>CRYPTO_ETH_URL</key>
+	<string>$(CRYPTO_ETH_URL)</string>
+	<key>CRYPTO_POLYGON_URL</key>
+	<string>$(CRYPTO_POLYGON_URL)</string>
+	<key>CRYPTO_ROPSTEN_URL</key>
+	<string>$(CRYPTO_ROPSTEN_URL)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

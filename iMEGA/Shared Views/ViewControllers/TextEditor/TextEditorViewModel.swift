@@ -10,6 +10,7 @@ enum TextEditorViewAction: ActionType {
     case cancelText(content: String)
     case cancel
     case downloadToOffline
+    
     case importNode
     case share(sender: Any)
     case editAfterOpen

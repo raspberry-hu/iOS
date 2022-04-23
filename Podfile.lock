@@ -1,32 +1,34 @@
 PODS:
+  - BigInt (5.2.0)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.10)
   - CocoaLumberjack/Core (3.7.4)
   - CocoaLumberjack/Swift (3.7.4):
     - CocoaLumberjack/Core
+  - CryptoSwift (1.4.3)
   - DateTools (2.0.0)
   - DZNEmptyDataSet (1.8.1)
-  - Firebase/CoreOnly (8.12.1):
-    - FirebaseCore (= 8.12.1)
-  - Firebase/Crashlytics (8.12.1):
+  - Firebase/CoreOnly (8.14.0):
+    - FirebaseCore (= 8.14.0)
+  - Firebase/Crashlytics (8.14.0):
     - Firebase/CoreOnly
-    - FirebaseCrashlytics (~> 8.12.0)
-  - FirebaseCore (8.12.1):
+    - FirebaseCrashlytics (~> 8.14.0)
+  - FirebaseCore (8.14.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/Logger (~> 7.7)
-  - FirebaseCoreDiagnostics (8.12.0):
+  - FirebaseCoreDiagnostics (8.14.0):
     - GoogleDataTransport (~> 9.1)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/Logger (~> 7.7)
     - nanopb (~> 2.30908.0)
-  - FirebaseCrashlytics (8.12.0):
+  - FirebaseCrashlytics (8.14.0):
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
     - GoogleDataTransport (~> 9.1)
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - FirebaseInstallations (8.12.0):
+  - FirebaseInstallations (8.14.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/UserDefaults (~> 7.7)
@@ -45,6 +47,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
   - Haptica (3.0.3)
+  - iMonitorMyFiles (0.1.0)
   - InputBarAccessoryView (5.4.0):
     - InputBarAccessoryView/Core (= 5.4.0)
   - InputBarAccessoryView/Core (5.4.0)
@@ -75,14 +78,31 @@ PODS:
   - PhoneNumberKit/UIKit (3.3.4):
     - PhoneNumberKit/PhoneNumberKitCore
   - PinLayout (1.10.2)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
   - PromisesObjC (2.0.0)
   - PureLayout (3.1.9)
   - SAMKeychain (1.5.3)
-  - SDWebImage/Core (5.12.3)
+  - SDWebImage/Core (5.12.5)
   - SDWebImageWebPCoder (0.8.4):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.10)
+  - secp256k1.c (0.1.2)
+  - Starscream (4.0.4)
   - SwiftGen (6.5.1)
+  - web3swift (2.5.0):
+    - BigInt (~> 5.2.0)
+    - CryptoSwift (~> 1.4.2)
+    - PromiseKit (~> 6.15.3)
+    - secp256k1.c (~> 0.1)
+    - Starscream (~> 4.0.4)
   - WSTagsField (5.4.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -98,6 +118,7 @@ DEPENDENCIES:
   - FlexLayout
   - GKContactImage (from `https://github.com/meganz/GKContactImage.git`)
   - Haptica
+  - iMonitorMyFiles (~> 0.1.0)
   - ISEmojiView (from `https://github.com/isaced/ISEmojiView.git`, tag `0.2.6`)
   - JustPieChart
   - "Keyboard+LayoutGuide"
@@ -109,13 +130,16 @@ DEPENDENCIES:
   - SAMKeychain
   - SDWebImageWebPCoder
   - SwiftGen
+  - web3swift (from `https://github.com/skywinder/web3swift.git`)
   - WSTagsField
   - YYCategories
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - BigInt
     - CHTCollectionViewWaterfallLayout
     - CocoaLumberjack
+    - CryptoSwift
     - DateTools
     - Firebase
     - FirebaseCore
@@ -127,6 +151,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - Haptica
+    - iMonitorMyFiles
     - InputBarAccessoryView
     - JustPieChart
     - "Keyboard+LayoutGuide"
@@ -135,10 +160,13 @@ SPEC REPOS:
     - nanopb
     - PhoneNumberKit
     - PinLayout
+    - PromiseKit
     - PromisesObjC
     - SAMKeychain
     - SDWebImage
     - SDWebImageWebPCoder
+    - secp256k1.c
+    - Starscream
     - SwiftGen
     - WSTagsField
     - YYCategories
@@ -157,6 +185,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/ilia3546/PanModal.git
   PureLayout:
     :git: https://github.com/PureLayout/PureLayout.git
+  web3swift:
+    :git: https://github.com/skywinder/web3swift.git
 
 CHECKOUT OPTIONS:
   DZNEmptyDataSet:
@@ -174,23 +204,29 @@ CHECKOUT OPTIONS:
   PureLayout:
     :commit: cc3078c0d33de27e22304c9b90c7f5e1f795d3f6
     :git: https://github.com/PureLayout/PureLayout.git
+  web3swift:
+    :commit: 5edab19883d890219517be1436369891e0560df8
+    :git: https://github.com/skywinder/web3swift.git
 
 SPEC CHECKSUMS:
+  BigInt: f668a80089607f521586bbe29513d708491ef2f7
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   DZNEmptyDataSet: b94434220f87d9dda46660eb4f07a424778e93b4
-  Firebase: 580d09e8edafc3073ebf09c03fd42e4d80d35fe9
-  FirebaseCore: 8138de860a90ca7eec5e324da5788fb0ebf1d93c
-  FirebaseCoreDiagnostics: 3b40dfadef5b90433a60ae01f01e90fe87aa76aa
-  FirebaseCrashlytics: 7952ffd988006128325510664b99dc8ca5851dff
-  FirebaseInstallations: 25764cf322e77f99449395870a65b2bef88e1545
+  Firebase: 7e8fe528c161b9271d365217a74c16aaf834578e
+  FirebaseCore: b84a44ee7ba999e0f9f76d198a9c7f60a797b848
+  FirebaseCoreDiagnostics: fd0c8490f34287229c1d6c103d3a55f81ec85712
+  FirebaseCrashlytics: 079ef36f5c4b7161188928faec40fa276ebefd84
+  FirebaseInstallations: 7d1d967a307c12f1aadd76844fc321cef699b1ce
   FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
   FlexLayout: 5b44c0538e7eaa2110e3160dfdfb74611676fb91
   GKContactImage: fee93c0311deb91f1aca8f1c337dbb0b6f68a119
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   Haptica: 23497230b2d7476621f7860263ae0667279a0a89
+  iMonitorMyFiles: 1d17367af6dd83f0042f10683eb508904645242b
   InputBarAccessoryView: 74d471ab1fa1736806be50328df79257e52865a9
   ISEmojiView: f7cd94a6c93307f429ec5da001293d0b02247f03
   JustPieChart: 8f442c60abf743fce27137096fea113e6bd43ecc
@@ -201,15 +237,19 @@ SPEC CHECKSUMS:
   PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
   PhoneNumberKit: 441e8b26ec88d598e3591de9061eff18f5dd12e8
   PinLayout: d6b1960e4b182b4da1481b9aa6728f621e20708d
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SDWebImageWebPCoder: f93010f3f6c031e2f8fb3081ca4ee6966c539815
+  secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+  web3swift: 31ecb7a7da543f851344cdd64badea94c439b0d9
   WSTagsField: a4e91b7d866e8c9755332ebcf8123f42f2abd4a0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 9a527f1d41b5380c17e73d6325782d498431b937
+PODFILE CHECKSUM: a27434ad276abd3f368d235a02f52acb5a4e060a
 
 COCOAPODS: 1.11.2

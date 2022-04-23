@@ -14,6 +14,7 @@ struct MEGAMintNode: View {
         VStack {
             Text(node.base64Handle ?? "No Base64")
             Text(node.name ?? "No Name")
+            Text(node.publicLink ?? "No URL")
         }
     }
 }

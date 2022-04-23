@@ -11,6 +11,8 @@
 #import "MEGANodeList+MNZCategory.h"
 
 #import "GetLinkActivity.h"
+//铸币头文件
+#import "NFTMintActivity.h"
 #import "Helper.h"
 #import "RemoveLinkActivity.h"
 #import "RemoveSharingActivity.h"
@@ -147,6 +149,7 @@ typedef NS_OPTIONS(NSUInteger, NodesAre) {
         GetLinkActivity *getLinkActivity = [[GetLinkActivity alloc] initWithNodes:nodes];
         [activitiesMutableArray addObject:getLinkActivity];
         
+        
         SendToChatActivity *sendToChatActivity = [[SendToChatActivity alloc] initWithNodes:nodes];
         [activitiesMutableArray addObject:sendToChatActivity];
 
@@ -168,7 +171,10 @@ typedef NS_OPTIONS(NSUInteger, NodesAre) {
     
     GetLinkActivity *getLinkActivity = [[GetLinkActivity alloc] initWithNodes:nodesArray];
     [activitiesMutableArray addObject:getLinkActivity];
-    
+    //此处添加铸币
+//    NFTMintActivity *nftMintActivity = [[NFTMintActivity alloc] initWithNodes:nodesArray];
+//    [activitiesMutableArray addObject:nftMintActivity];
+    //
     NodesAre nodesAre = [UIActivityViewController checkPropertiesForSharingNodes:nodesArray];
     
     BOOL allNodesExistInOffline = NO;
@@ -178,6 +184,7 @@ typedef NS_OPTIONS(NSUInteger, NodesAre) {
         [activitiesMutableArray addObject:shareFolderActivity];
     } else if (NodesAreFiles == (nodesAre & NodesAreFiles)) {
         filesURLMutableArray = [[NSMutableArray alloc] initWithArray:[UIActivityViewController checkIfAllOfTheseNodesExistInOffline:nodesArray]];
+        NSLog(@"输出文件路径0%@", filesURLMutableArray);
         if ([filesURLMutableArray count]) {
             allNodesExistInOffline = YES;
         }
@@ -190,7 +197,7 @@ typedef NS_OPTIONS(NSUInteger, NodesAre) {
         for (NSURL *fileURL in filesURLMutableArray) {
             [activityItemsMutableArray addObject:fileURL];
         }
-        
+        NSLog(@"输出文件路径1%@", filesURLMutableArray);
         [excludedActivityTypesMutableArray removeObjectsInArray:@[UIActivityTypePrint, UIActivityTypeAirDrop]];
         
         if (nodesArray.count < 5) {
@@ -296,7 +303,7 @@ typedef NS_OPTIONS(NSUInteger, NodesAre) {
     
     return nodesAre;
 }
-
+//寻找本地文件
 + (NSArray *)checkIfAllOfTheseNodesExistInOffline:(NSArray *)nodesArray {
     NSMutableArray *filesURLMutableArray = [[NSMutableArray alloc] init];
     for (MEGANode *node in nodesArray) {

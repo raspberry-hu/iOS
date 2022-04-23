@@ -70,11 +70,22 @@ class ReactionContainerView: UIView {
                 flex.addItem(addMoreView).width(44).margin(2).height(30)
             }
             
-            if UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
-                rootFlexContainer.flex.direction(.rowReverse)
-            } else {
-                rootFlexContainer.flex.direction(.row)
+//            if UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
+//                rootFlexContainer.flex.direction(.rowReverse)
+//            } else {
+//                rootFlexContainer.flex.direction(.row)
+//            }
+            //此处修改UInt64
+            do {
+                if try UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
+                    rootFlexContainer.flex.direction(.rowReverse)
+                } else {
+                    rootFlexContainer.flex.direction(.row)
+                }
+            } catch let error as NSError {
+                print("UInt64发生错误: \(error.localizedDescription)")
             }
+            //
             setNeedsLayout()
         }
     }
@@ -124,13 +135,27 @@ class ReactionContainerView: UIView {
     
     private func layout() {
         rootFlexContainer.pin.top()
-        if UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
-            rootFlexContainer.pin.width(UIScreen.main.bounds.width - 40)
-            rootFlexContainer.pin.right()
-        } else {
-            rootFlexContainer.pin.width(UIScreen.main.bounds.width - 70)
-            rootFlexContainer.pin.left(30)
+//        if UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
+//            rootFlexContainer.pin.width(UIScreen.main.bounds.width - 40)
+//            rootFlexContainer.pin.right()
+//        } else {
+//            rootFlexContainer.pin.width(UIScreen.main.bounds.width - 70)
+//            rootFlexContainer.pin.left(30)
+//        }
+//      此处修改UInt64
+        do {
+            if try UInt64(chatMessage?.sender.senderId ?? "") == MEGASdkManager.sharedMEGAChatSdk().myUserHandle {
+                rootFlexContainer.pin.width(UIScreen.main.bounds.width - 40)
+                rootFlexContainer.pin.right()
+            } else {
+                rootFlexContainer.pin.width(UIScreen.main.bounds.width - 70)
+                rootFlexContainer.pin.left(30)
+            }
+            
+        } catch let error as NSError {
+            print("UInt64修改失败: \(error.localizedDescription)")
         }
+//
         rootFlexContainer.flex.layout(mode: .adjustHeight)
     }
     

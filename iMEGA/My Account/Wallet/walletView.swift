@@ -9,25 +9,26 @@
 import SwiftUI
 
 struct BoatDetailsView: View {
+    @StateObject var vm = CoreDataManager.shared
     var shipName = ""
     var body: some View {
         TabView {
-            Text("资产")
+            NFTAssetView()
                 .tabItem {
                     Image(systemName: "bitcoinsign.square")
                     Text("资产")
                 }
-            Text("NFT市场")
+            NFTMarketView()
                 .tabItem {
                     Image(systemName: "cart")
                     Text("NFT市场")
                 }
-            Text("DSC网盘")
+            DSCDriveView()
                 .tabItem {
                     Image(systemName: "externaldrive.badge.icloud")
                     Text("DSC网盘")
                 }
-            Text("设置")
+            walletSetView()
                 .tabItem {
                     Image(systemName: "gear")
                     Text("设置")

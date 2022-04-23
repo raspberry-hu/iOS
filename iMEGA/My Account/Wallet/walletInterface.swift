@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 @objc
 class BoatDetailsInterface: NSObject {
- 
+    
     @objc func makeShipDetailsUI(_ name: String) -> UIViewController{
         var details = BoatDetailsView()
         details.shipName = name

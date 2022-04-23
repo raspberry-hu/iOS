@@ -1,3 +1,4 @@
+import UIKit
 final class TextEditorViewController: UIViewController {
     private var viewModel: TextEditorViewModel
     
@@ -285,6 +286,10 @@ extension TextEditorViewController: ViewType {
                 target: nil,
                 action: nil
             )
+        //修改bar图标
+//        let mintBarButtonItem =
+//        UIBarButtonItem(barButtonSystemItem: Asset.Images.NodeActions.mint.image, style: .plain, target: self, action: <#T##Selector?#>)
+        
         let downloadBarButtonItem =
             UIBarButtonItem(
                 image: Asset.Images.NodeActions.offline.image,

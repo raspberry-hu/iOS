@@ -27,7 +27,7 @@
 }
 
 - (NSString *)activityTitle {
-    return NSLocalizedString(@"saveImage", nil);
+    return NSLocalizedString(@"Mint", nil);
 }
 
 - (UIImage *)activityImage {

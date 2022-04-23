@@ -359,7 +359,15 @@ class ChatMessageActionMenuViewController: ActionSheetViewController {
     // MARK: - Internal methods used by the extension of this class
 
     func isFromCurrentSender(message: ChatMessage) -> Bool {
-        return UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+//  此处修改UInt64
+//  return UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+        var trueIs = false
+        do {
+            let trueIs = try UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
+        return trueIs
+//
     }
-
 }

@@ -2,7 +2,7 @@
 #import "Helper.h"
 
 @interface OpenInActivity () <UIDocumentInteractionControllerDelegate>
-
+//只适合单张图片的打开
 @property (strong, nonatomic) UIBarButtonItem *shareBarButtonItem;
 @property (strong, nonatomic) UIView *view;
 @property (strong, nonatomic) UIDocumentInteractionController *documentInteractionController;
@@ -47,6 +47,7 @@
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
     self.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:activityItems.firstObject];
+    NSLog(@"打印输出:%@",activityItems.firstObject);
     [self.documentInteractionController setDelegate:self];
 }
 

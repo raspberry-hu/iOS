@@ -625,6 +625,7 @@
 }
 
 - (IBAction)downloadAction:(UIBarButtonItem *)sender {
+    //批量下载
     for (MEGANode *n in self.selection.nodes) {
         if (![Helper isFreeSpaceEnoughToDownloadNode:n isFolderLink:NO]) {
             [self setEditing:NO animated:YES];
@@ -632,12 +633,15 @@
         }
         
         [Helper downloadNode:n folderPath:[Helper relativePathForOffline] isFolderLink:NO];
+//        NSLog(@"打印离线路径:%@", [Helper relativePathForOffline]);
+//        NSLog(@"批量下载");
     }
     
     [self setEditing:NO animated:YES];
 }
 
 - (IBAction)shareAction:(UIBarButtonItem *)sender {
+    //图片多选分享
     UIActivityViewController *activityVC = [UIActivityViewController activityViewControllerForNodes:self.selection.nodes sender:self.shareBarButtonItem];
     [self presentViewController:activityVC animated:YES completion:nil];
     

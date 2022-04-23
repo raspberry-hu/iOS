@@ -39,7 +39,15 @@ class PhoneNumberViewController: UITableViewController {
         
         do {
             let phoneNumber = try PhoneNumberKit().parse(verifiedPhone)
-            countrycodeLabel.text = "+" + String(phoneNumber.countryCode)
+//
+//            countrycodeLabel.text = "+" + String(phoneNumber.countryCode)
+//UInt64修改
+            do {
+                try countrycodeLabel.text = "+" + String(phoneNumber.countryCode)
+            } catch let error as NSError {
+                print("UInt64修改失败: \(error.localizedDescription)")
+            }
+//
             phoneNumberLabel.text = PhoneNumberKit().format(phoneNumber, toType: .national)
         }
         catch {

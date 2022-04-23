@@ -10,6 +10,8 @@
 #import "SVProgressHUD.h"
 #import "UIScrollView+EmptyDataSet.h"
 
+#import <iMonitorMyFiles/TABFileMonitor.h>
+
 #import "NSFileManager+MNZCategory.h"
 #import "NSString+MNZCategory.h"
 #import "UIActivityViewController+MNZCategory.h"
@@ -77,6 +79,7 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *carbonCopyBarButtonItem;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *deleteBarButtonItem;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *restoreBarButtonItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *mintBarBarButtonItem;
 
 @property (nonatomic, strong) NSArray *nodesArray;
 
@@ -624,13 +627,17 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
         }
             
         case MEGAShareTypeAccessFull: {
+            //修改底部Item
             self.toolbar.items = @[self.downloadBarButtonItem, flexibleItem, self.carbonCopyBarButtonItem, flexibleItem, self.moveBarButtonItem, flexibleItem, self.deleteBarButtonItem];
             break;
         }
             
         case MEGAShareTypeAccessOwner: {
             if (self.displayMode == DisplayModeCloudDrive) {
-                [self.toolbar setItems:@[self.downloadBarButtonItem, flexibleItem, self.shareBarButtonItem, flexibleItem, self.moveBarButtonItem, flexibleItem, self.carbonCopyBarButtonItem, flexibleItem, self.deleteBarButtonItem]];
+                //添加底部Item
+                [self.mintBarBarButtonItem setImage:[UIImage imageNamed:@"mint"]];
+                self.mintBarBarButtonItem.title = NSLocalizedString(@"mint", nil);
+                [self.toolbar setItems:@[self.downloadBarButtonItem, flexibleItem, self.mintBarBarButtonItem, flexibleItem, self.shareBarButtonItem, flexibleItem, self.moveBarButtonItem, flexibleItem, self.carbonCopyBarButtonItem, flexibleItem, self.deleteBarButtonItem]];
             } else { //Rubbish Bin
                 [self.toolbar setItems:@[self.restoreBarButtonItem, flexibleItem, self.moveBarButtonItem, flexibleItem, self.carbonCopyBarButtonItem, flexibleItem, self.deleteBarButtonItem]];
             }
@@ -650,6 +657,7 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
     self.carbonCopyBarButtonItem.enabled = boolValue;
     self.deleteBarButtonItem.enabled = boolValue;
     self.restoreBarButtonItem.enabled = boolValue;
+    self.mintBarBarButtonItem.enabled = boolValue;
     
     if ((self.displayMode == DisplayModeRubbishBin) && boolValue) {
         for (MEGANode *n in self.selectedNodesArray) {
@@ -1317,14 +1325,121 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
         [AudioPlayerManager.shared playerHidden:editing presenter:self];
     }
 }
+//文件监控
+
+//
+
+//批量铸币操作
+//通过改写下载功能，创建一个获取任务，同时监视本地文件夹，查找是否存在相应的文件，如果下载完成则会弹窗结束，然后传递相应的MegaNode到新的铸币Sheet，可以在该页面进行铸币
+- (IBAction)MintAction:(UIBarButtonItem *)sender {
+    [SVProgressHUD showImage:[UIImage imageNamed:@"hudDownload"] status:NSLocalizedString(@"downloadStarted", nil)];
+    //批量下载
+    __block int num = 0;
+    __block int count = 0;
+    for (MEGANode *node in self.selectedNodesArray) {
+        NSLog(@"自增");
+        NSLog(@"公共地址: %@", node.publicLink);
+        count++;
+    }
+    NSMutableArray<MEGANode *> *selectedNodesArrayTemp = [self.selectedNodesArray mutableCopy];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    if (paths.count == 0) {
+        NSLog(@"没有该路径");
+    }
+    NSURL *directoryURL = [NSURL URLWithString:docDir];
+    //文件扫描
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    for (MEGANode *node in self.selectedNodesArray) {
+        NSString *tempStr = [docDir stringByAppendingPathComponent:node.name];
+        NSLog(@"文件路径: %@", tempStr);
+//        NSURL *directoryTemp = [NSURL URLWithString:tempStr];
+        if ([fileManager fileExistsAtPath:tempStr]) {
+            count--;
+        }
+    }
+    if (count != 0) {
+        int const fd = open([[directoryURL path] fileSystemRepresentation], O_EVTONLY);
+        
+        if (fd < 0) {
+            NSLog(@"路径无法打开: %@", [directoryURL path]);
+        } else {
+            NSLog(@"路径已经打开：%@", [directoryURL path]);
+        }
+        dispatch_queue_t defaultQueue = dispatch_queue_create("monitorQueue", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_VNODE, fd, DISPATCH_VNODE_WRITE | DISPATCH_VNODE_RENAME, defaultQueue);
+        dispatch_source_set_event_handler(source, ^() {
+            unsigned long const type = dispatch_source_get_data(source);
+            switch (type) {
+                case DISPATCH_VNODE_WRITE: {
+                    NSLog(@"目录内容改变");
+                    NSLog(@"数组长度: %d", count);
+                    if (num != count * 2 - 1) {
+                        NSLog(@"未完成记数");
+                        num++;
+                    } else {
+                        NSLog(@"完成记录");
+                        dispatch_cancel(source);
+                    }
+                    
+                    break;
+                }
+                case DISPATCH_VNODE_RENAME: {
+                    NSLog(@"目录内容重命名");
+                    break;
+                }
+                default:
+                    break;
+                }
+        });
+        dispatch_resume(source);
+        dispatch_source_set_cancel_handler(source, ^() {
+            NSLog(@"GCD任务结束");
+            close(fd);
+            dispatch_queue_t main_queue = dispatch_get_main_queue();
+            dispatch_sync(main_queue, ^{
+                NSLog(@"count = %d", count);
+                NSLog(@"文件在本地");
+                UIViewController *MEGAMintsNodeController = [[MEGAMintsNodeInterface new] MEGAMintsNodeInterfaceView: [self selectedNodesArray]];
+                [self presentModalViewController:MEGAMintsNodeController animated:YES];
+                
+                [self setEditMode:NO];
+                [self reloadData];
+            });
+        });
+    } else {
+        NSLog(@"count = %d", count);
+        NSLog(@"文件在本地");
+        UIViewController *MEGAMintsNodeController = [[MEGAMintsNodeInterface new] MEGAMintsNodeInterfaceView: [self selectedNodesArray]];
+        [self presentModalViewController:MEGAMintsNodeController animated:YES];
+        
+        [self setEditMode:NO];
+        [self reloadData];
+    }
+    for (MEGANode *node in self.selectedNodesArray) {
+        NSLog(@"批量下载");
+        if ([node mnz_downloadNode]) {
+            NSLog(@"进入判断");
+            NSLog(@"名称:%@", node.name);
+            [self.cdTableView.tableView reloadData];
+        } else {
+            NSLog(@"未进入判断");
+            return;
+        }
+    }
+}
+
 
 - (IBAction)downloadAction:(UIBarButtonItem *)sender {
     [SVProgressHUD showImage:[UIImage imageNamed:@"hudDownload"] status:NSLocalizedString(@"downloadStarted", nil)];
-    
+    //批量下载
     for (MEGANode *node in self.selectedNodesArray) {
+        NSLog(@"批量下载");
         if ([node mnz_downloadNode]) {
+            NSLog(@"进入判断");
             [self.cdTableView.tableView reloadData];
         } else {
+            NSLog(@"未进入判断");
             return;
         }
     }
@@ -1595,9 +1710,13 @@ static const NSUInteger kMinDaysToEncourageToUpgrade = 3;
             
         case MegaNodeActionTypeDownload:
             [SVProgressHUD showImage:[UIImage imageNamed:@"hudDownload"] status:NSLocalizedString(@"downloadStarted", @"Message shown when a download starts")];
+            NSLog(@"开始下载");
+//            DirectoryMonitor * directoryMonitor = [[DirectoryMonitor alloc] initWithUrl:<#(NSURL * _Nonnull)#>];
             if ([node mnz_downloadNode]) {
                 [self.cdTableView.tableView reloadData];
+                NSLog(@"进入判断 下载");
             }
+            NSLog(@"结束");
             break;
             
         case MegaNodeActionTypeCopy:

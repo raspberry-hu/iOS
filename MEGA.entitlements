@@ -10,6 +10,7 @@
 		<string>applinks:www.mega.nz</string>
 		<string>applinks:testbed.preview.mega.co.nz</string>
 		<string>applinks:testbed.preview.mega.nz</string>
+		<string>applinks:web.10940918.xyz</string>
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
@@ -27,7 +28,7 @@
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.mega.ios</string>
+		<string>group.CY-31CA14BA-FD9C-11E9-B502-5738E57DC72E.com.cydia.Extender</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>

@@ -1057,12 +1057,45 @@
 		83FEA8B625C1B3990063A560 /* FolderLinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */; };
 		83FF502F247E86CD00EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
 		83FF5030247E86F600EAC08B /* CustomModalAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A819B33E1EAFA7E2004592F9 /* CustomModalAlertViewController.m */; };
+		851590A727D79CD00005F862 /* MEGAMintsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590A627D79CD00005F862 /* MEGAMintsNode.swift */; };
+		851590A827D79CD00005F862 /* MEGAMintsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590A627D79CD00005F862 /* MEGAMintsNode.swift */; };
+		851590A927D79CD00005F862 /* MEGAMintsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590A627D79CD00005F862 /* MEGAMintsNode.swift */; };
+		851590AD27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
+		851590AE27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
+		851590AF27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
+		8528FF8A27EA0BC1000ED5F0 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF8927EA0BC1000ED5F0 /* BigInt */; };
+		8528FF9627EA106C000ED5F0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF9527EA106C000ED5F0 /* CryptoSwift */; };
+		8528FF9927EA107E000ED5F0 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF9827EA107E000ED5F0 /* Starscream */; };
+		8528FF9C27EA10AA000ED5F0 /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF9B27EA10AA000ED5F0 /* secp256k1 */; };
+		8528FFBA27EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */; };
+		8528FFC127EB03CC000ED5F0 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FFC027EB03CC000ED5F0 /* Web3 */; };
+		8528FFC327EB03CC000ED5F0 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FFC227EB03CC000ED5F0 /* Web3ContractABI */; };
+		8528FFC527EB03CC000ED5F0 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FFC427EB03CC000ED5F0 /* Web3PromiseKit */; };
+		8528FFCA27EB040A000ED5F0 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FFC927EB040A000ED5F0 /* PromiseKit */; };
+		8539C37C280A65A20097A758 /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C37B280A65A20097A758 /* WalletConnectSwift */; };
+		8539C39E280AFA570097A758 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C39D280AFA570097A758 /* Defaults */; };
+		8539C3A9280CFA2B0097A758 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C3A8280CFA2B0097A758 /* KeychainAccess */; };
 		856EE08F27D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
 		856EE09027D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
 		856EE09127D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
 		856EE09527D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
 		856EE09627D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
 		856EE09727D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
+		856EE0A327D4A78900149D8C /* NFTMintActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EE0A227D4A78900149D8C /* NFTMintActivity.m */; };
+		858DBFB5280D42A60042AE75 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 858DBFB4280D42A60042AE75 /* SDWebImageSwiftUI */; };
+		8595E7A627E9AC75005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7A527E9AC75005CB5D5 /* ACarousel */; };
+		8595E7A927E9AC9D005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7A827E9AC9D005CB5D5 /* ACarousel */; };
+		8595E7AC27E9ACB5005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7AB27E9ACB5005CB5D5 /* ACarousel */; };
+		8595E7AF27E9ACC8005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7AE27E9ACC8005CB5D5 /* ACarousel */; };
+		8595E7B227E9ACF6005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7B127E9ACF6005CB5D5 /* ACarousel */; };
+		8595E7B527E9AD05005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7B427E9AD05005CB5D5 /* ACarousel */; };
+		8595E7B827E9C3A8005CB5D5 /* walletCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7B627E9C3A8005CB5D5 /* walletCoreData.xcdatamodeld */; };
+		8595E7BA27E9C467005CB5D5 /* walletPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7B927E9C467005CB5D5 /* walletPersistence.swift */; };
+		8595E7BF27E9E5E0005CB5D5 /* NFTMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7BE27E9E5E0005CB5D5 /* NFTMarketView.swift */; };
+		8595E7C127E9E5F8005CB5D5 /* DSCDriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7C027E9E5F8005CB5D5 /* DSCDriveView.swift */; };
+		8595E7C327E9E60A005CB5D5 /* walletSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7C227E9E60A005CB5D5 /* walletSetView.swift */; };
+		8595E7C627E9E65A005CB5D5 /* NFTAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595E7C527E9E65A005CB5D5 /* NFTAssetView.swift */; };
+		85AC13B7280D584F00EA7BAF /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 85AC13B6280D584F00EA7BAF /* SFSafeSymbols */; };
 		85CEB9FC27CF5016007F27E5 /* walletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEB9FB27CF5016007F27E5 /* walletView.swift */; };
 		85CEB9FE27CF502C007F27E5 /* walletInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEB9FD27CF502C007F27E5 /* walletInterface.swift */; };
 		9411354F1F00FD1500D33428 /* Cloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415226691A692ECC00EC7BB6 /* Cloud.storyboard */; };
@@ -2386,8 +2419,8 @@
 		137361911A6664C300B740E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		137361921A6664C300B740E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1373619D1A6664C300B740E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		188452451A89DE30F4BC1BDB /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAWidgetExtension/Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		21E5A8341CCF4BBF58BC37EE /* Pods-iMEGA-MEGAShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAShare.debug.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAShare/Pods-iMEGA-MEGAShare.debug.xcconfig"; sourceTree = "<group>"; };
+		2362D156E7A9C9E5F5C9B1C2 /* Pods-iMEGA-MEGAIntent.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAIntent.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAIntent/Pods-iMEGA-MEGAIntent.megawallet.xcconfig"; sourceTree = "<group>"; };
 		27106B2654702F4890215A22 /* Pods-iMEGA-MEGAPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAPicker.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAPicker/Pods-iMEGA-MEGAPicker.release.xcconfig"; sourceTree = "<group>"; };
 		2F0194A6243452E500734EA3 /* ChatViewController+InputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+InputBar.swift"; sourceTree = "<group>"; };
 		2F029233244FD6D90071A6E2 /* ChatManagmentTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManagmentTypeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -2483,6 +2516,7 @@
 		2FFCF3A925FB1F5E00E1718D /* MeetingCreatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCreatingViewController.swift; sourceTree = "<group>"; };
 		2FFCF3C325FB1FBE00E1718D /* MeetingCreatingViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCreatingViewRouter.swift; sourceTree = "<group>"; };
 		2FFCF3CD25FB1FE700E1718D /* MeetingCreatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCreatingViewModel.swift; sourceTree = "<group>"; };
+		32AF74F9F9F4949E08446D9D /* Pods-iMEGA-MEGAShare.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAShare.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAShare/Pods-iMEGA-MEGAShare.megawallet.xcconfig"; sourceTree = "<group>"; };
 		3DC16A53C2A4D456573BAEE1 /* Pods_iMEGA_MEGAIntent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMEGA_MEGAIntent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		410333D71B9993A000380FF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		410333E11B99948600380FF3 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
@@ -2592,6 +2626,7 @@
 		41FC83B01AA853CC008FA551 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SettingsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		41FC83BE1AAE056C008FA551 /* CameraUploadsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraUploadsTableViewController.h; sourceTree = "<group>"; };
 		41FC83BF1AAE056C008FA551 /* CameraUploadsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CameraUploadsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4BC4A578117E3C69DC7738D0 /* Pods-iMEGA-MEGAPickerFileProvider.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAPickerFileProvider.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAPickerFileProvider/Pods-iMEGA-MEGAPickerFileProvider.megawallet.xcconfig"; sourceTree = "<group>"; };
 		4F65E4F9FEFEB4A036CF93C9 /* Pods-iMEGA-MEGANotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGANotifications.debug.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGANotifications/Pods-iMEGA-MEGANotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		553A9E85EBBC3A2DE5994EEF /* Pods-iMEGA-MEGA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGA.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGA/Pods-iMEGA-MEGA.release.xcconfig"; sourceTree = "<group>"; };
 		5B0062C41F3DBA16008B7A91 /* MyAccountHallTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountHallTableViewCell.h; sourceTree = "<group>"; };
@@ -2996,8 +3031,10 @@
 		5DFC8DC424ECF37800DDA006 /* MEGAavatarGeneratingUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAavatarGeneratingUseCaseTests.swift; sourceTree = "<group>"; };
 		635E004E70F3D28EB93A99B8 /* Pods_iMEGA_MEGAPickerFileProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMEGA_MEGAPickerFileProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6462E4EC10864E0093B28129 /* Pods-iMEGA-MEGAIntent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAIntent.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAIntent/Pods-iMEGA-MEGAIntent.release.xcconfig"; sourceTree = "<group>"; };
+		650B23A8210DE91481DB0AF5 /* Pods-iMEGA-MEGAPicker.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAPicker.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAPicker/Pods-iMEGA-MEGAPicker.megawallet.xcconfig"; sourceTree = "<group>"; };
 		6EB2987BE3BFDB8070962245 /* Pods-iMEGA-MEGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGA.debug.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGA/Pods-iMEGA-MEGA.debug.xcconfig"; sourceTree = "<group>"; };
 		70F9B3EA07F8F091C5227E3C /* Pods_iMEGA_MEGAWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMEGA_MEGAWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71799CBEC0B75D5E43B08902 /* Pods-iMEGA-MEGAWidgetExtension.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAWidgetExtension.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAWidgetExtension/Pods-iMEGA-MEGAWidgetExtension.megawallet.xcconfig"; sourceTree = "<group>"; };
 		7714901420F7592000769BD4 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		771A1B5E21C9220C00A8555D /* OnboardingViewType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingViewType.h; sourceTree = "<group>"; };
 		771A1B5F21C9227A00A8555D /* OnboardingType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingType.h; sourceTree = "<group>"; };
@@ -3089,6 +3126,7 @@
 		77FD20002359A5A7004FB892 /* libvideocapture_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideocapture_objc.a; path = iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib/libvideocapture_objc.a; sourceTree = "<group>"; };
 		77FD20012359A5A7004FB892 /* libnative_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnative_video.a; path = iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib/libnative_video.a; sourceTree = "<group>"; };
 		7EA1ECE334811A47056CABEE /* Pods-iMEGA-MEGAPickerFileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAPickerFileProvider.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAPickerFileProvider/Pods-iMEGA-MEGAPickerFileProvider.release.xcconfig"; sourceTree = "<group>"; };
+		80B6742F701309A968CC638C /* Pods-MEGAUnitTests.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEGAUnitTests.megawallet.xcconfig"; path = "Target Support Files/Pods-MEGAUnitTests/Pods-MEGAUnitTests.megawallet.xcconfig"; sourceTree = "<group>"; };
 		82180C05739A204E51DBC53A /* Pods_iMEGA_MEGANotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMEGA_MEGANotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830B54882178845300BE1E1F /* CloudDriveTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudDriveTableViewController.h; sourceTree = "<group>"; };
 		830B54892178845300BE1E1F /* CloudDriveTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudDriveTableViewController.m; sourceTree = "<group>"; };
@@ -3347,8 +3385,19 @@
 		83FB1438219C372800418BE6 /* MOOfflineFolderLayout+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MOOfflineFolderLayout+CoreDataProperties.m"; sourceTree = "<group>"; };
 		83FEA8B125C1B3970063A560 /* FolderLinkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkCollectionViewController.swift; sourceTree = "<group>"; };
 		83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkTableViewController.swift; sourceTree = "<group>"; };
+		851590A627D79CD00005F862 /* MEGAMintsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintsNode.swift; sourceTree = "<group>"; };
+		851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintsNodeInterface.swift; sourceTree = "<group>"; };
+		8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAWidgetExtension/Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNode.swift; sourceTree = "<group>"; };
 		856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNodeInterface.swift; sourceTree = "<group>"; };
+		856EE0A127D4A68100149D8C /* NFTMintActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFTMintActivity.h; sourceTree = "<group>"; };
+		856EE0A227D4A78900149D8C /* NFTMintActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFTMintActivity.m; sourceTree = "<group>"; };
+		8595E7B727E9C3A8005CB5D5 /* walletCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walletCoreData.xcdatamodel; sourceTree = "<group>"; };
+		8595E7B927E9C467005CB5D5 /* walletPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletPersistence.swift; sourceTree = "<group>"; };
+		8595E7BE27E9E5E0005CB5D5 /* NFTMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarketView.swift; sourceTree = "<group>"; };
+		8595E7C027E9E5F8005CB5D5 /* DSCDriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCDriveView.swift; sourceTree = "<group>"; };
+		8595E7C227E9E60A005CB5D5 /* walletSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletSetView.swift; sourceTree = "<group>"; };
+		8595E7C527E9E65A005CB5D5 /* NFTAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTAssetView.swift; sourceTree = "<group>"; };
 		85CEB9FB27CF5016007F27E5 /* walletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletView.swift; sourceTree = "<group>"; };
 		85CEB9FD27CF502C007F27E5 /* walletInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletInterface.swift; sourceTree = "<group>"; };
 		9419B6BE1F20D1D700FEBE31 /* MEGAIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGAIndexer.h; path = Spotlight/MEGAIndexer.h; sourceTree = "<group>"; };
@@ -4316,6 +4365,8 @@
 		C4F31EDB25C19ABE00E15146 /* AudioPlayerFileToolbarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerFileToolbarConfigurator.swift; sourceTree = "<group>"; };
 		C4F31EF825C1C50B00E15146 /* CustomTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		C4F31F0225C1C51A00E15146 /* CustomTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTitleView.xib; sourceTree = "<group>"; };
+		CD5F6AA491007A6A69CEA0A0 /* Pods-iMEGA-MEGANotifications.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGANotifications.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGANotifications/Pods-iMEGA-MEGANotifications.megawallet.xcconfig"; sourceTree = "<group>"; };
+		D67FAB6CD3005527799FE08D /* Pods-iMEGA-MEGA.megawallet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGA.megawallet.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGA/Pods-iMEGA-MEGA.megawallet.xcconfig"; sourceTree = "<group>"; };
 		E6B77FEB7A645A11A64A31AE /* Pods-iMEGA-MEGAShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAShare.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAShare/Pods-iMEGA-MEGAShare.release.xcconfig"; sourceTree = "<group>"; };
 		E803CB651D5336F100F81A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E803CB681D53374A00F81A36 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -4416,28 +4467,42 @@
 				A82751141E97AB79007CD9E2 /* libsqlite3.tbd in Frameworks */,
 				2FA6DA62243E919D007A8E81 /* Accelerate.framework in Frameworks */,
 				2FA6DA60243E9198007A8E81 /* ImageIO.framework in Frameworks */,
+				8539C3A9280CFA2B0097A758 /* KeychainAccess in Frameworks */,
 				2FA6DA5E243E918D007A8E81 /* QuartzCore.framework in Frameworks */,
+				8539C39E280AFA570097A758 /* Defaults in Frameworks */,
 				2FA6DA5D243E915F007A8E81 /* CoreFoundation.framework in Frameworks */,
 				77FD20022359A5A7004FB892 /* libvideoframebuffer_objc.a in Frameworks */,
 				77FD20032359A5A7004FB892 /* libnative_api.a in Frameworks */,
 				77FD20042359A5A7004FB892 /* libvideocapture_objc.a in Frameworks */,
+				8528FFCA27EB040A000ED5F0 /* PromiseKit in Frameworks */,
+				8539C37C280A65A20097A758 /* WalletConnectSwift in Frameworks */,
 				77FD20052359A5A7004FB892 /* libnative_video.a in Frameworks */,
+				8528FF9627EA106C000ED5F0 /* CryptoSwift in Frameworks */,
+				85AC13B7280D584F00EA7BAF /* SFSafeSymbols in Frameworks */,
 				77FD1FFD2359A59C004FB892 /* libwebrtc.a in Frameworks */,
 				A811DCC02476C4F7002FCD98 /* CoreServices.framework in Frameworks */,
 				A82A38D7200D333100883533 /* libmediainfo.a in Frameworks */,
+				8528FF9C27EA10AA000ED5F0 /* secp256k1 in Frameworks */,
+				858DBFB5280D42A60042AE75 /* SDWebImageSwiftUI in Frameworks */,
+				8528FFC127EB03CC000ED5F0 /* Web3 in Frameworks */,
 				A82A38D0200D32BD00883533 /* libzen.a in Frameworks */,
 				A8F6E8911F9E75D00087859C /* VideoToolbox.framework in Frameworks */,
+				8595E7A627E9AC75005CB5D5 /* ACarousel in Frameworks */,
 				A8F6E88F1F9E75B70087859C /* libwebsockets.a in Frameworks */,
+				8528FFC527EB03CC000ED5F0 /* Web3PromiseKit in Frameworks */,
 				A88BFFED1F0A56B80081BCE3 /* libKarere.a in Frameworks */,
 				A88BFFE91F0A55E20081BCE3 /* libMEGASDK.a in Frameworks */,
 				A88BFFDE1F0A52E90081BCE3 /* libuv.a in Frameworks */,
 				A811DCB82476C460002FCD98 /* MetalKit.framework in Frameworks */,
 				A82751161E97AB88007CD9E2 /* libstdc++.tbd in Frameworks */,
 				A88BFFE11F0A52E90081BCE3 /* libsodium.a in Frameworks */,
+				8528FF8A27EA0BC1000ED5F0 /* BigInt in Frameworks */,
 				A88BFFD51F0A52E90081BCE3 /* libcryptopp.a in Frameworks */,
 				A88BFFD81F0A52E90081BCE3 /* libcurl.a in Frameworks */,
 				A82751121E97AB73007CD9E2 /* libresolv.tbd in Frameworks */,
 				4D0B2F71E80816B269390FE4 /* Pods_iMEGA_MEGA.framework in Frameworks */,
+				8528FF9927EA107E000ED5F0 /* Starscream in Frameworks */,
+				8528FFC327EB03CC000ED5F0 /* Web3ContractABI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4522,6 +4587,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8595E7B527E9AD05005CB5D5 /* ACarousel in Frameworks */,
 				AFB9E5289DE713C9923B72ED /* Pods_iMEGA_MEGAIntent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4542,6 +4608,7 @@
 				A811DCC42476C557002FCD98 /* Photos.framework in Frameworks */,
 				A82A38D6200D332400883533 /* libmediainfo.a in Frameworks */,
 				A82A38D1200D32CA00883533 /* libzen.a in Frameworks */,
+				8595E7A927E9AC9D005CB5D5 /* ACarousel in Frameworks */,
 				A8C262A71FA0B60B006172CE /* Metal.framework in Frameworks */,
 				A811DCC12476C507002FCD98 /* CoreServices.framework in Frameworks */,
 				A8C262A41FA0B5CD006172CE /* CoreVideo.framework in Frameworks */,
@@ -4587,6 +4654,7 @@
 				77FD200D2359E2D2004FB892 /* libwebrtc.a in Frameworks */,
 				A82A38D5200D331700883533 /* libmediainfo.a in Frameworks */,
 				A82A38D2200D32D500883533 /* libzen.a in Frameworks */,
+				8595E7AC27E9ACB5005CB5D5 /* ACarousel in Frameworks */,
 				A8C2629E1FA0B56E006172CE /* VideoToolbox.framework in Frameworks */,
 				A8C262991FA0B4BA006172CE /* AudioToolbox.framework in Frameworks */,
 				A811DCB92476C472002FCD98 /* MetalKit.framework in Frameworks */,
@@ -4622,6 +4690,7 @@
 				A82A38D3200D32EB00883533 /* libzen.a in Frameworks */,
 				A8C2629D1FA0B55E006172CE /* VideoToolbox.framework in Frameworks */,
 				A8C262951FA0B439006172CE /* libwebsockets.a in Frameworks */,
+				8595E7AF27E9ACC8005CB5D5 /* ACarousel in Frameworks */,
 				94B28C401F0E4865000331E6 /* libcurl.a in Frameworks */,
 				A811DCC22476C51C002FCD98 /* Photos.framework in Frameworks */,
 				94B28C481F0E4865000331E6 /* libcryptopp.a in Frameworks */,
@@ -4654,6 +4723,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8595E7B227E9ACF6005CB5D5 /* ACarousel in Frameworks */,
 				32E91C90F91FF51AEBFD2C55 /* Pods_MEGAUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5079,6 +5149,8 @@
 				B6F8CDCA262821820074CBBF /* CoreDataErrorHandler.m */,
 				BF22BFB0268AC51400460DB3 /* MOUploadTransfer+Mapper.swift */,
 				B6F8CE3C2628F1970074CBBF /* MEGAStore+User.swift */,
+				8595E7B627E9C3A8005CB5D5 /* walletCoreData.xcdatamodeld */,
+				8595E7B927E9C467005CB5D5 /* walletPersistence.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -5559,6 +5631,8 @@
 				C44080B4273580AF00E3EDDE /* UIViewController+Backup.swift */,
 				856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */,
 				856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */,
+				851590A627D79CD00005F862 /* MEGAMintsNode.swift */,
+				851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -6954,7 +7028,15 @@
 				21E5A8341CCF4BBF58BC37EE /* Pods-iMEGA-MEGAShare.debug.xcconfig */,
 				E6B77FEB7A645A11A64A31AE /* Pods-iMEGA-MEGAShare.release.xcconfig */,
 				11C7FF88BFFD3EA483617882 /* Pods-iMEGA-MEGAWidgetExtension.debug.xcconfig */,
-				188452451A89DE30F4BC1BDB /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */,
+				8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */,
+				80B6742F701309A968CC638C /* Pods-MEGAUnitTests.megawallet.xcconfig */,
+				D67FAB6CD3005527799FE08D /* Pods-iMEGA-MEGA.megawallet.xcconfig */,
+				2362D156E7A9C9E5F5C9B1C2 /* Pods-iMEGA-MEGAIntent.megawallet.xcconfig */,
+				CD5F6AA491007A6A69CEA0A0 /* Pods-iMEGA-MEGANotifications.megawallet.xcconfig */,
+				650B23A8210DE91481DB0AF5 /* Pods-iMEGA-MEGAPicker.megawallet.xcconfig */,
+				4BC4A578117E3C69DC7738D0 /* Pods-iMEGA-MEGAPickerFileProvider.megawallet.xcconfig */,
+				32AF74F9F9F4949E08446D9D /* Pods-iMEGA-MEGAShare.megawallet.xcconfig */,
+				71799CBEC0B75D5E43B08902 /* Pods-iMEGA-MEGAWidgetExtension.megawallet.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -7686,10 +7768,46 @@
 		857F524527CE562E00B1A53A /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				8595E7C427E9E649005CB5D5 /* NFTAsset */,
+				8595E7BD27E9E53F005CB5D5 /* NFTMarket */,
+				8595E7BC27E9E4D1005CB5D5 /* DSCDrive */,
+				8595E7BB27E9E4C0005CB5D5 /* walletSet */,
 				85CEB9FB27CF5016007F27E5 /* walletView.swift */,
 				85CEB9FD27CF502C007F27E5 /* walletInterface.swift */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		8595E7BB27E9E4C0005CB5D5 /* walletSet */ = {
+			isa = PBXGroup;
+			children = (
+				8595E7C227E9E60A005CB5D5 /* walletSetView.swift */,
+			);
+			path = walletSet;
+			sourceTree = "<group>";
+		};
+		8595E7BC27E9E4D1005CB5D5 /* DSCDrive */ = {
+			isa = PBXGroup;
+			children = (
+				8595E7C027E9E5F8005CB5D5 /* DSCDriveView.swift */,
+			);
+			path = DSCDrive;
+			sourceTree = "<group>";
+		};
+		8595E7BD27E9E53F005CB5D5 /* NFTMarket */ = {
+			isa = PBXGroup;
+			children = (
+				8595E7BE27E9E5E0005CB5D5 /* NFTMarketView.swift */,
+			);
+			path = NFTMarket;
+			sourceTree = "<group>";
+		};
+		8595E7C427E9E649005CB5D5 /* NFTAsset */ = {
+			isa = PBXGroup;
+			children = (
+				8595E7C527E9E65A005CB5D5 /* NFTAssetView.swift */,
+			);
+			path = NFTAsset;
 			sourceTree = "<group>";
 		};
 		9419B6BD1F20D18300FEBE31 /* Spotlight */ = {
@@ -10135,6 +10253,8 @@
 				5B367575204FFBF60087362D /* SendToChatActivity.h */,
 				5B367574204FFBF60087362D /* SendToChatActivity.m */,
 				2FBBE87225E5D54100B760BC /* ImportTextActivity.swift */,
+				856EE0A127D4A68100149D8C /* NFTMintActivity.h */,
+				856EE0A227D4A78900149D8C /* NFTMintActivity.m */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -10167,6 +10287,20 @@
 			);
 			name = MEGA;
 			packageProductDependencies = (
+				8595E7A527E9AC75005CB5D5 /* ACarousel */,
+				8528FF8927EA0BC1000ED5F0 /* BigInt */,
+				8528FF9527EA106C000ED5F0 /* CryptoSwift */,
+				8528FF9827EA107E000ED5F0 /* Starscream */,
+				8528FF9B27EA10AA000ED5F0 /* secp256k1 */,
+				8528FFC027EB03CC000ED5F0 /* Web3 */,
+				8528FFC227EB03CC000ED5F0 /* Web3ContractABI */,
+				8528FFC427EB03CC000ED5F0 /* Web3PromiseKit */,
+				8528FFC927EB040A000ED5F0 /* PromiseKit */,
+				8539C37B280A65A20097A758 /* WalletConnectSwift */,
+				8539C39D280AFA570097A758 /* Defaults */,
+				8539C3A8280CFA2B0097A758 /* KeychainAccess */,
+				858DBFB4280D42A60042AE75 /* SDWebImageSwiftUI */,
+				85AC13B6280D584F00EA7BAF /* SFSafeSymbols */,
 			);
 			productName = iMEGA;
 			productReference = 1373618A1A6664C300B740E8 /* MEGA.app */;
@@ -10222,6 +10356,9 @@
 			dependencies = (
 			);
 			name = MEGAIntent;
+			packageProductDependencies = (
+				8595E7B427E9AD05005CB5D5 /* ACarousel */,
+			);
 			productName = MEGAIntent;
 			productReference = 831B490E256FED6F0086002B /* MEGAIntent.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -10240,6 +10377,9 @@
 			dependencies = (
 			);
 			name = MEGAPicker;
+			packageProductDependencies = (
+				8595E7A827E9AC9D005CB5D5 /* ACarousel */,
+			);
 			productName = MEGAPicker;
 			productReference = 942254DC1EDC03130074C51A /* MEGAPicker.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -10258,6 +10398,9 @@
 			dependencies = (
 			);
 			name = MEGAPickerFileProvider;
+			packageProductDependencies = (
+				8595E7AB27E9ACB5005CB5D5 /* ACarousel */,
+			);
 			productName = MEGAPickerFileProvider;
 			productReference = 942254EB1EDC03140074C51A /* MEGAPickerFileProvider.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -10276,6 +10419,9 @@
 			dependencies = (
 			);
 			name = MEGAShare;
+			packageProductDependencies = (
+				8595E7AE27E9ACC8005CB5D5 /* ACarousel */,
+			);
 			productName = MEGAShare;
 			productReference = 943F8B0F1EF26E9C00AFD89F /* MEGAShare.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -10295,6 +10441,9 @@
 				B6CED49122B8AC70009C4861 /* PBXTargetDependency */,
 			);
 			name = MEGAUnitTests;
+			packageProductDependencies = (
+				8595E7B127E9ACF6005CB5D5 /* ACarousel */,
+			);
 			productName = MEGAUnitTests;
 			productReference = B6CED48B22B8AC70009C4861 /* MEGAUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -10311,9 +10460,7 @@
 				TargetAttributes = {
 					137361891A6664C300B740E8 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = T9RH74Y7L9;
 						LastSwiftMigration = 1030;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -10340,8 +10487,6 @@
 					};
 					7794AED3231E4E0A0039C1D2 = {
 						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = T9RH74Y7L9;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -10350,19 +10495,13 @@
 					};
 					83199F1025556CD900344531 = {
 						CreatedOnToolsVersion = 12.1;
-						DevelopmentTeam = T9RH74Y7L9;
-						ProvisioningStyle = Manual;
 					};
 					831B490D256FED6F0086002B = {
 						CreatedOnToolsVersion = 12.2;
-						DevelopmentTeam = T9RH74Y7L9;
-						ProvisioningStyle = Manual;
 					};
 					942254DB1EDC03130074C51A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T9RH74Y7L9;
 						LastSwiftMigration = 1130;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -10371,8 +10510,6 @@
 					};
 					942254EA1EDC03140074C51A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T9RH74Y7L9;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -10381,9 +10518,7 @@
 					};
 					943F8B0E1EF26E9C00AFD89F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T9RH74Y7L9;
 						LastSwiftMigration = 1130;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -10395,8 +10530,6 @@
 					};
 					B6CED48A22B8AC70009C4861 = {
 						CreatedOnToolsVersion = 10.2.1;
-						DevelopmentTeam = T9RH74Y7L9;
-						ProvisioningStyle = Manual;
 						TestTargetID = 137361891A6664C300B740E8;
 					};
 				};
@@ -10443,6 +10576,18 @@
 			);
 			mainGroup = 137361811A6664C300B740E8;
 			packageReferences = (
+				8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */,
+				8528FF8827EA0BC1000ED5F0 /* XCRemoteSwiftPackageReference "BigInt" */,
+				8528FF9427EA106C000ED5F0 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				8528FF9727EA107E000ED5F0 /* XCRemoteSwiftPackageReference "Starscream" */,
+				8528FF9A27EA10AA000ED5F0 /* XCRemoteSwiftPackageReference "secp256k1.swift" */,
+				8528FFBF27EB03CC000ED5F0 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				8528FFC827EB040A000ED5F0 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				8539C37A280A65A20097A758 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */,
+				8539C39C280AFA570097A758 /* XCRemoteSwiftPackageReference "Defaults" */,
+				8539C3A7280CFA2B0097A758 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				858DBFB3280D42A60042AE75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				85AC13B5280D584F00EA7BAF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
 			);
 			productRefGroup = 1373618B1A6664C300B740E8 /* Products */;
 			projectDirPath = "";
@@ -10505,6 +10650,7 @@
 				837EE205253DB8540083D927 /* GetLink.storyboard in Resources */,
 				2F3083BC2428169F0058DF91 /* Chat.storyboard in Resources */,
 				BF7EBD2F244E916F0015255F /* AddToChatViewController.xib in Resources */,
+				8528FFBA27EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig in Resources */,
 				BF1589262436A296007AF9EC /* MessageInputBar.xib in Resources */,
 				BFB463FC243456D900FB90B9 /* ChatViewIntroductionHeaderView.xib in Resources */,
 				5B3B0D1F2684B8F200479A68 /* defaultIcon@2x~ipad.png in Resources */,
@@ -11021,6 +11167,7 @@
 				5DB1F47C2489E5CC001C1D5D /* ParagraphStyle.swift in Sources */,
 				B6E6726B277D4E4B00158FA0 /* PhotoUpdatePublisher.swift in Sources */,
 				B67A2C7F251755FC00B40D89 /* PreferenceRepositoryProtocol.swift in Sources */,
+				8595E7BF27E9E5E0005CB5D5 /* NFTMarketView.swift in Sources */,
 				BFFED4B326FB094F00B9EBEC /* FolderLinkCollectionViewDiffableDataSource.swift in Sources */,
 				833003A424DAFF6F00053B23 /* NodeInfoDetailTableViewCell.swift in Sources */,
 				41AB8EC11A7103B300E40A39 /* BrowserViewController.m in Sources */,
@@ -11285,6 +11432,7 @@
 				8311208822C0CD69006F6E36 /* EnterEmailViewController.swift in Sources */,
 				A8C79A5427229BF90038834D /* MEGASubscriptionStatus+Mapper.swift in Sources */,
 				5DF016832499BD7B005A121D /* MEGAPlanService.swift in Sources */,
+				851590AD27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */,
 				5B00B6E8210745BF0076D5BB /* FileManagementTableViewController.m in Sources */,
 				5B78F0B21F3C5362007ED721 /* MyAccountHallViewController.m in Sources */,
 				BFAB114D23CEA5C300BCE72D /* Albums.swift in Sources */,
@@ -11483,6 +11631,7 @@
 				A8812BAB27957BBC00F0D2DB /* LogFileCompressor.swift in Sources */,
 				5D1B240B24AF625200ACE1C5 /* MEGAColor.swift in Sources */,
 				B6C444D1274A280800268D9A /* PhotoLibraryDayView.swift in Sources */,
+				851590A727D79CD00005F862 /* MEGAMintsNode.swift in Sources */,
 				83FEA8B625C1B3990063A560 /* FolderLinkTableViewController.swift in Sources */,
 				5D2AF57F24F4A711000B2F29 /* UploadFromAlbum.swift in Sources */,
 				A811CE2C22EAFB1700B24E76 /* SearchOperation.m in Sources */,
@@ -11514,6 +11663,7 @@
 				B6C5D09C2718D19B004FB105 /* PhotoLibraryContentViewModel.swift in Sources */,
 				B6F853492794FB5A00028D51 /* PhotoLibraryPicker.swift in Sources */,
 				5D8DC6B1248CB0C40067A4F9 /* CornerStyle.swift in Sources */,
+				8595E7C627E9E65A005CB5D5 /* NFTAssetView.swift in Sources */,
 				BFE6E55E25535DEB00050DCA /* UITableViewCell+Additions.swift in Sources */,
 				B662B87124F332250089376A /* MEGAStringList+Mapper.swift in Sources */,
 				E8CD19871A9266D600CB8B2A /* UnavailableLinkView.m in Sources */,
@@ -11851,6 +12001,7 @@
 				836E74C42099DC82005E2317 /* MEGAChatChangeGroupNameRequestDelegate.m in Sources */,
 				BFAFAF1725195B2000C92887 /* SlidePanelAnimationController.swift in Sources */,
 				B6D90BCA22253BC700E0623A /* BackgroundUploadingTaskMonitor.m in Sources */,
+				8595E7B827E9C3A8005CB5D5 /* walletCoreData.xcdatamodeld in Sources */,
 				5BE7BEE523745FC700BBD23F /* EmptyStateView.m in Sources */,
 				B695B605264B43160050DF09 /* SVProgressHUD.m in Sources */,
 				BFAB113D23CEA5C300BCE72D /* PhotoGridViewCell.swift in Sources */,
@@ -11974,6 +12125,7 @@
 				BF33EF822445401800CD35AC /* AudioRecordingInputBar.swift in Sources */,
 				5B40AB321F7A512E0034C3B3 /* AchievementsDetailsViewController.m in Sources */,
 				837DC7AC256D196400CA289E /* GetLinkPasswordTableViewCell.swift in Sources */,
+				8595E7BA27E9C467005CB5D5 /* walletPersistence.swift in Sources */,
 				5DA9759924B6CD6C00FBD045 /* UIControl.State+Hashable.swift in Sources */,
 				123E301D275B31A400EEDAAA /* PhotoCardNumber.swift in Sources */,
 				5D03C99B248893E600BE5EEB /* UINavigationBar+Customisation.swift in Sources */,
@@ -12095,6 +12247,7 @@
 				C44D6DFF25701420003D1723 /* AudioPlaylistViewModel.swift in Sources */,
 				5D6092AE255D6ABD005FA3E4 /* ActionSheetFactory.swift in Sources */,
 				B60102C522E172FC00A92C17 /* VerificationCodeViewController.swift in Sources */,
+				8595E7C327E9E60A005CB5D5 /* walletSetView.swift in Sources */,
 				BF5E33762558BE620055395E /* ExplorerToolbarConfigurator.swift in Sources */,
 				BFE6DBFE2431489C00E2E5B4 /* ChatViewController+NavigationBar.swift in Sources */,
 				5DF0E3D12563A8540052CC95 /* MEGAResultMappingRequestDelegate.swift in Sources */,
@@ -12147,6 +12300,7 @@
 				5B2E918D1F1F454C003C6920 /* MEGAStartUploadTransferDelegate.m in Sources */,
 				BF782D81269BA8610001D169 /* RecentActionBucketEntity+Mapper.swift in Sources */,
 				BF15891F2435EF85007AF9EC /* ChatViewCallCollectionCell.swift in Sources */,
+				856EE0A327D4A78900149D8C /* NFTMintActivity.m in Sources */,
 				BF5E33AF2558D8330055395E /* FilesExplorerGridViewController.swift in Sources */,
 				0D0B53812625585600E9BB16 /* UploadFileRespositoryProtocol.swift in Sources */,
 				417840A01AC328A600713F3C /* ChangePasswordViewController.m in Sources */,
@@ -12176,6 +12330,7 @@
 				BFCEE8B425102D9600D43448 /* IndexSet+Additions.swift in Sources */,
 				C4CBDD3F256EC00900835CF5 /* AudioPlayerItem.swift in Sources */,
 				2F0CB0C2260028EC002CB24F /* MeetingCreatingUseCase.swift in Sources */,
+				8595E7C127E9E5F8005CB5D5 /* DSCDriveView.swift in Sources */,
 				5D9DC3CC253EB7AF0055F4C4 /* Debouncer.swift in Sources */,
 				BF1574AE2373AB8C0095B283 /* MEGAChatRoom+Additions.swift in Sources */,
 				5D83042025638DE70082CA18 /* MEGABanner.swift in Sources */,
@@ -12412,6 +12567,7 @@
 				77264F242147D60600DC6BCB /* MEGACopyRequestDelegate.m in Sources */,
 				83FB143D219C3C7100418BE6 /* MOOfflineFolderLayout+CoreDataClass.m in Sources */,
 				5BC1276E2375A73000CCAF26 /* EmptyStateView.m in Sources */,
+				851590A827D79CD00005F862 /* MEGAMintsNode.swift in Sources */,
 				77F0522222CB8BBE00032138 /* MEGAGenericRequestDelegate.m in Sources */,
 				C460506A27282D7200D67A44 /* NodeHandle+Additions.swift in Sources */,
 				A873E84526E117A400CBB174 /* AppReinstallationCleaner.swift in Sources */,
@@ -12484,6 +12640,7 @@
 				A85740C72032F6E70033034C /* MOChatDraft+CoreDataProperties.m in Sources */,
 				BF22BFBA268AF67300460DB3 /* MOUploadTransfer+Mapper.swift in Sources */,
 				9432294A1EDD9CAA007DB542 /* UIDevice+MNZCategory.m in Sources */,
+				851590AE27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */,
 				5BAC7CAE2677C00200F8C305 /* NodeTableViewCell.m in Sources */,
 				945605491EDD6FAC0094EF0F /* Helper.m in Sources */,
 				9432294E1EDD9CEE007DB542 /* NSString+MNZCategory.m in Sources */,
@@ -12703,6 +12860,7 @@
 				C482B7D2271F34C40074CFC4 /* Result+Additions.swift in Sources */,
 				941135551F01002E00D33428 /* OpenInActivity.m in Sources */,
 				5B419EE42473E60C008C3D06 /* GenericHeaderFooterView.swift in Sources */,
+				851590A927D79CD00005F862 /* MEGAMintsNode.swift in Sources */,
 				C43817B82746924F00EA82A8 /* DynamicTypeComponentProtocol.swift in Sources */,
 				5B2E78CD1FA0C3310096C9BE /* MEGACreateFolderRequestDelegate.m in Sources */,
 				A81DF35F2508FDE6009C8B60 /* DateFormatting.swift in Sources */,
@@ -12735,6 +12893,7 @@
 				77F95CF020E3E5C000F42D9C /* SendToViewController.m in Sources */,
 				B6DC7CBF2640FDE300659EE0 /* MEGASdkManager+CleanUp.m in Sources */,
 				832F19F02091BD980067679E /* MOMediaDestination+CoreDataClass.m in Sources */,
+				851590AF27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13117,10 +13276,10 @@
 				CODE_SIGN_ENTITLEMENTS = MEGA.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2202031349;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -13163,10 +13322,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios;
 				PRODUCT_NAME = MEGA;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Supporting Files/MEGA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -13188,12 +13347,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MEGA.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2202031349;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -13234,10 +13393,10 @@
 					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios;
 				PRODUCT_NAME = MEGA;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Supporting Files/MEGA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -13264,11 +13423,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGANotifications/MEGANotifications.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -13299,9 +13458,9 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGANotifications;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGANotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGANotifications";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-Bridging-Header.h";
@@ -13326,13 +13485,13 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGANotifications/MEGANotifications.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -13363,7 +13522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGANotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGANotifications";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -13390,11 +13549,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -13422,9 +13581,9 @@
 				MARKETING_VERSION = 7.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGAWidget";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-Bridging-Header.h";
@@ -13439,7 +13598,7 @@
 		};
 		83199F2025556CDE00344531 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 188452451A89DE30F4BC1BDB /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */;
+			baseConfigurationReference = 8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -13451,13 +13610,13 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidgetExtension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -13485,7 +13644,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGAWidget";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -13508,11 +13667,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"MNZ_INTENT_EXTENSION=1",
@@ -13529,9 +13688,9 @@
 				MARKETING_VERSION = 7.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGAIntent";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -13548,13 +13707,13 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"MNZ_INTENT_EXTENSION=1",
@@ -13571,40 +13730,120 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGAIntent";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		942254FA1EDC03150074C51A /* Debug */ = {
+		8539C38A280A9E860097A758 /* MegaWallet */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082DBB20E5CB3365612DDA94 /* Pods-iMEGA-MEGAPickerFileProvider.debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider.entitlements;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = MegaWallet;
+		};
+		8539C38B280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67FAB6CD3005527799FE08D /* Pods-iMEGA-MEGA.megawallet.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MEGA.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
-				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
-				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider-PrefixHeader.pch";
+				CURRENT_PROJECT_VERSION = 2202031349;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/iMEGA",
+					"$(PROJECT_DIR)/iMEGA/Vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "iMEGA/Supporting Files/MEGA-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					HAVE_LIBUV,
+					ENABLE_CHAT,
+					MAIN_APP_TARGET,
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					iMEGA/Vendor/SSKeychain,
 					iMEGA/Vendor/PureLayout/PureLayout,
 					iMEGA/Vendor/Import,
+					iMEGA/Vendor/FrameAccessor,
+					iMEGA/Vendor/SDK/bindings/ios/3rdparty/webrtc/sdk/objc/Framework/Headers,
 				);
-				INFOPLIST_FILE = iMEGA/Extensions/MEGAPickerFileProvider/Info.plist;
+				INFOPLIST_FILE = "iMEGA/Supporting Files/Info.plist";
+				INTENTS_CODEGEN_LANGUAGE = "Objective-C";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -13612,69 +13851,31 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 7.3;
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAPickerFileProvider;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGAPickerFileProvider";
-				SKIP_INSTALL = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios;
+				PRODUCT_NAME = MEGA;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Supporting Files/MEGA-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = (
 					"iMEGA/Vendor/SDK/bindings/ios/**",
 					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					iMEGA/Vendor/SDK/bindings/ios/3rdparty/webrtc/sdk/objc/Framework/Headers/WebRTC,
 					"$(inherited)",
 				);
+				VERSIONING_SYSTEM = "";
 			};
-			name = Debug;
+			name = MegaWallet;
 		};
-		942254FB1EDC03150074C51A /* Release */ = {
+		8539C38C280A9E860097A758 /* MegaWallet */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EA1ECE334811A47056CABEE /* Pods-iMEGA-MEGAPickerFileProvider.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				COMPILER_INDEX_STORE_ENABLE = NO;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
-				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider-PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					iMEGA/Vendor/SSKeychain,
-					iMEGA/Vendor/PureLayout/PureLayout,
-					iMEGA/Vendor/Import,
-				);
-				INFOPLIST_FILE = iMEGA/Extensions/MEGAPickerFileProvider/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
-					"$(PROJECT_DIR)",
-				);
-				MARKETING_VERSION = 7.3;
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAPickerFileProvider;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGAPickerFileProvider";
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = (
-					"iMEGA/Vendor/SDK/bindings/ios/**",
-					"iMEGA/Vendor/Karere/bindings/Objective-C",
-					"$(inherited)",
-				);
-			};
-			name = Release;
-		};
-		942254FD1EDC03150074C51A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBBBBB6EBD65E33BF9F902DC /* Pods-iMEGA-MEGAPicker.debug.xcconfig */;
+			baseConfigurationReference = 650B23A8210DE91481DB0AF5 /* Pods-iMEGA-MEGAPicker.megawallet.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -13683,11 +13884,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPicker/MEGAPicker.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -13720,9 +13921,502 @@
 				);
 				MARKETING_VERSION = 7.3;
 				OTHER_CFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGAPicker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAPicker/Supporting Files/MEGAPicker-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C38D280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC4A578117E3C69DC7738D0 /* Pods-iMEGA-MEGAPickerFileProvider.megawallet.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+				);
+				INFOPLIST_FILE = iMEGA/Extensions/MEGAPickerFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.3;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAPickerFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C38E280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32AF74F9F9F4949E08446D9D /* Pods-iMEGA-MEGAShare.megawallet.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAShare/MEGAShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAShare/Supporting Files/MEGAShare-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SV_APP_EXTENSIONS=1",
+					"LTH_IS_APP_EXTENSION=1",
+					"MNZ_SHARE_EXTENSION=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+				);
+				INFOPLIST_FILE = "iMEGA/Extensions/MEGAShare/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.3;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAShare/Supporting Files/MEGAShare-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C38F280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5F6AA491007A6A69CEA0A0 /* Pods-iMEGA-MEGANotifications.megawallet.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGANotifications/MEGANotifications.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"MNZ_APP_EXTENSION=1",
+					"MNZ_NOTIFICATION_EXTENSION=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					iMEGA/Vendor/Import,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMEGA/Extensions/MEGANotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				MARKETING_VERSION = 7.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGANotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGANotifications/MEGANotifications-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C390280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B6742F701309A968CC638C /* Pods-MEGAUnitTests.megawallet.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+					iMEGA/Vendor/FrameAccessor,
+					iMEGA/Vendor/SDK/bindings/ios/3rdparty/webrtc/sdk/objc/Framework/Headers,
+				);
+				INFOPLIST_FILE = MEGAUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Supporting Files/MEGA-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MEGA.app/MEGA";
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C391280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71799CBEC0B75D5E43B08902 /* Pods-iMEGA-MEGAWidgetExtension.megawallet.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidgetExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					MNZ_APP_EXTENSION,
+					"MNZ_WIDGET_EXTENSION=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					iMEGA/Vendor/Import,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iMEGA/Extensions/MEGAWidget/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				MARKETING_VERSION = 7.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAWidget/Supporting Files/MEGAWidget-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = (
+					iMEGA/Vendor/SDK/bindings/ios,
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = MegaWallet;
+		};
+		8539C392280A9E860097A758 /* MegaWallet */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2362D156E7A9C9E5F5C9B1C2 /* Pods-iMEGA-MEGAIntent.megawallet.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MNZ_INTENT_EXTENSION=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iMEGA/Extensions/MEGAIntent/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 7.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = MegaWallet;
+		};
+		942254FA1EDC03150074C51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082DBB20E5CB3365612DDA94 /* Pods-iMEGA-MEGAPickerFileProvider.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+				);
+				INFOPLIST_FILE = iMEGA/Extensions/MEGAPickerFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.3;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAPickerFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		942254FB1EDC03150074C51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA1ECE334811A47056CABEE /* Pods-iMEGA-MEGAPickerFileProvider.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPickerFileProvider/MEGAPickerFileProvider-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+				);
+				INFOPLIST_FILE = iMEGA/Extensions/MEGAPickerFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.3;
+				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAPickerFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"iMEGA/Vendor/SDK/bindings/ios/**",
+					"iMEGA/Vendor/Karere/bindings/Objective-C",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		942254FD1EDC03150074C51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBBBB6EBD65E33BF9F902DC /* Pods-iMEGA-MEGAPicker.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPicker/MEGAPicker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 2201261415;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "iMEGA/Extensions/MEGAPicker/MEGAPicker-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SV_APP_EXTENSIONS=1",
+					"LTH_IS_APP_EXTENSION=1",
+					"MNZ_PICKER_EXTENSION=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					iMEGA/Vendor/SSKeychain,
+					iMEGA/Vendor/PureLayout/PureLayout,
+					iMEGA/Vendor/Import,
+				);
+				INFOPLIST_FILE = iMEGA/Extensions/MEGAPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iMEGA/Vendor/SDK/bindings/ios/3rdparty/lib",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 7.3;
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAPicker/Supporting Files/MEGAPicker-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
@@ -13745,13 +14439,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAPicker/MEGAPicker.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -13784,7 +14478,7 @@
 				MARKETING_VERSION = 7.3;
 				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGAPicker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAPicker/Supporting Files/MEGAPicker-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
@@ -13808,11 +14502,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAShare/MEGAShare.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -13844,9 +14538,9 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 7.3;
-				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAShare;
+				PRODUCT_BUNDLE_IDENTIFIER = raspberry.ios.MEGAShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development mega.ios.MEGAShare";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAShare/Supporting Files/MEGAShare-Bridging-Header.h";
@@ -13869,13 +14563,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = iMEGA/Extensions/MEGAShare/MEGAShare.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2201261415;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -13908,7 +14602,7 @@
 				MARKETING_VERSION = 7.3;
 				PRODUCT_BUNDLE_IDENTIFIER = mega.ios.MEGAShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc mega.ios.MEGAShare";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "iMEGA/Extensions/MEGAShare/Supporting Files/MEGAShare-Bridging-Header.h";
@@ -13934,10 +14628,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = T9RH74Y7L9;
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -13992,12 +14687,13 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P49Y49T7AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -14037,6 +14733,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				137361AE1A6664C400B740E8 /* Debug */,
+				8539C38A280A9E860097A758 /* MegaWallet */,
 				137361AF1A6664C400B740E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14046,6 +14743,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				137361B11A6664C400B740E8 /* Debug */,
+				8539C38B280A9E860097A758 /* MegaWallet */,
 				137361B21A6664C400B740E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14055,6 +14753,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7794AEDC231E4E0A0039C1D2 /* Debug */,
+				8539C38F280A9E860097A758 /* MegaWallet */,
 				7794AEDD231E4E0A0039C1D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14064,6 +14763,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83199F1F25556CDE00344531 /* Debug */,
+				8539C391280A9E860097A758 /* MegaWallet */,
 				83199F2025556CDE00344531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14073,6 +14773,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				831B4917256FED700086002B /* Debug */,
+				8539C392280A9E860097A758 /* MegaWallet */,
 				831B4918256FED700086002B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14082,6 +14783,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				942254FA1EDC03150074C51A /* Debug */,
+				8539C38D280A9E860097A758 /* MegaWallet */,
 				942254FB1EDC03150074C51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14091,6 +14793,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				942254FD1EDC03150074C51A /* Debug */,
+				8539C38C280A9E860097A758 /* MegaWallet */,
 				942254FE1EDC03150074C51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14100,6 +14803,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				943F8B1B1EF26E9C00AFD89F /* Debug */,
+				8539C38E280A9E860097A758 /* MegaWallet */,
 				943F8B1C1EF26E9C00AFD89F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -14109,12 +14813,210 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6CED49222B8AC70009C4861 /* Debug */,
+				8539C390280A9E860097A758 /* MegaWallet */,
 				B6CED49322B8AC70009C4861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8528FF8827EA0BC1000ED5F0 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8528FF9427EA106C000ED5F0 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.3;
+			};
+		};
+		8528FF9727EA107E000ED5F0 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+		8528FF9A27EA10AA000ED5F0 /* XCRemoteSwiftPackageReference "secp256k1.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/secp256k1.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.6;
+			};
+		};
+		8528FFBF27EB03CC000ED5F0 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8528FFC827EB040A000ED5F0 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				branch = v6;
+				kind = branch;
+			};
+		};
+		8539C37A280A65A20097A758 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+		8539C39C280AFA570097A758 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8539C3A7280CFA2B0097A758 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		858DBFB3280D42A60042AE75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		85AC13B5280D584F00EA7BAF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8528FF8927EA0BC1000ED5F0 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FF8827EA0BC1000ED5F0 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+		8528FF9527EA106C000ED5F0 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FF9427EA106C000ED5F0 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		8528FF9827EA107E000ED5F0 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FF9727EA107E000ED5F0 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		8528FF9B27EA10AA000ED5F0 /* secp256k1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FF9A27EA10AA000ED5F0 /* XCRemoteSwiftPackageReference "secp256k1.swift" */;
+			productName = secp256k1;
+		};
+		8528FFC027EB03CC000ED5F0 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FFBF27EB03CC000ED5F0 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		8528FFC227EB03CC000ED5F0 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FFBF27EB03CC000ED5F0 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		8528FFC427EB03CC000ED5F0 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FFBF27EB03CC000ED5F0 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3PromiseKit;
+		};
+		8528FFC927EB040A000ED5F0 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8528FFC827EB040A000ED5F0 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		8539C37B280A65A20097A758 /* WalletConnectSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8539C37A280A65A20097A758 /* XCRemoteSwiftPackageReference "WalletConnectSwift" */;
+			productName = WalletConnectSwift;
+		};
+		8539C39D280AFA570097A758 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8539C39C280AFA570097A758 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		8539C3A8280CFA2B0097A758 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8539C3A7280CFA2B0097A758 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		858DBFB4280D42A60042AE75 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 858DBFB3280D42A60042AE75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		8595E7A527E9AC75005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		8595E7A827E9AC9D005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		8595E7AB27E9ACB5005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		8595E7AE27E9ACC8005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		8595E7B127E9ACF6005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		8595E7B427E9AD05005CB5D5 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8595E7A427E9AC75005CB5D5 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+		85AC13B6280D584F00EA7BAF /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AC13B5280D584F00EA7BAF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4147C2CF1B4EE8A400A37044 /* MEGACD.xcdatamodeld */ = {
@@ -14129,6 +15031,16 @@
 			);
 			currentVersion = BF99A41A24B2AA500035A183 /* MEGACD 6.xcdatamodel */;
 			path = MEGACD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8595E7B627E9C3A8005CB5D5 /* walletCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8595E7B727E9C3A8005CB5D5 /* walletCoreData.xcdatamodel */,
+			);
+			currentVersion = 8595E7B727E9C3A8005CB5D5 /* walletCoreData.xcdatamodel */;
+			path = walletCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

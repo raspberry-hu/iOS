@@ -36,7 +36,16 @@ class MessageReactionReusableView: MessageReusableView {
     }
 
     func isFromCurrentSender(message: MessageType) -> Bool {
-        return UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+//        return UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+        //UInt64修改
+        var truels = false
+        do {
+            let truels = try UInt64(message.sender.senderId) == MEGASdkManager.sharedMEGAChatSdk().myUserHandle
+        } catch let error as NSError {
+            print("UInt64修改失败: \(error.localizedDescription)")
+        }
+        return truels
+        //
     }
     
 }
