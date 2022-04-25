@@ -260,6 +260,7 @@ class GetLinkViewController: UIViewController {
         MEGASdkManager.sharedMEGASdk().export(node, delegate: MEGAExportRequestDelegate.init(completion: { [weak self] (request) in
             (self?.nodesToExportCount -= 1)
             if self?.nodesToExportCount == 0 {
+//                print("测试获取：\(self?.nodesToExportCount)")
                 SVProgressHUD.dismiss()
             }
             guard let nodeUpdated = MEGASdkManager.sharedMEGASdk().node(forHandle: node.handle) else {

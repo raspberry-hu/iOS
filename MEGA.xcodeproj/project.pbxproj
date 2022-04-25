@@ -1063,6 +1063,10 @@
 		851590AD27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
 		851590AE27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
 		851590AF27D79CE90005F862 /* MEGAMintsNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */; };
+		8519287E28153D66001F8546 /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519287C28153D64001F8546 /* MEGAMintNode.swift */; };
+		8519288628153D66001F8546 /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519287D28153D65001F8546 /* MEGAMintNodeInterface.swift */; };
+		8519289528154954001F8546 /* MEGAExportRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94624CFA1F50484200D52504 /* MEGAExportRequestDelegate.m */; };
+		8519289628154955001F8546 /* MEGAExportRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94624CFA1F50484200D52504 /* MEGAExportRequestDelegate.m */; };
 		8528FF8A27EA0BC1000ED5F0 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF8927EA0BC1000ED5F0 /* BigInt */; };
 		8528FF9627EA106C000ED5F0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF9527EA106C000ED5F0 /* CryptoSwift */; };
 		8528FF9927EA107E000ED5F0 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 8528FF9827EA107E000ED5F0 /* Starscream */; };
@@ -1075,12 +1079,6 @@
 		8539C37C280A65A20097A758 /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C37B280A65A20097A758 /* WalletConnectSwift */; };
 		8539C39E280AFA570097A758 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C39D280AFA570097A758 /* Defaults */; };
 		8539C3A9280CFA2B0097A758 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C3A8280CFA2B0097A758 /* KeychainAccess */; };
-		856EE08F27D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
-		856EE09027D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
-		856EE09127D1B9BC00149D8C /* MEGAMintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */; };
-		856EE09527D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
-		856EE09627D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
-		856EE09727D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */; };
 		856EE0A327D4A78900149D8C /* NFTMintActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EE0A227D4A78900149D8C /* NFTMintActivity.m */; };
 		858DBFB5280D42A60042AE75 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 858DBFB4280D42A60042AE75 /* SDWebImageSwiftUI */; };
 		8595E7A627E9AC75005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7A527E9AC75005CB5D5 /* ACarousel */; };
@@ -1197,8 +1195,6 @@
 		945605511EDD7DF70094EF0F /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AC33A31A926B55005118AF /* PhotoCollectionViewCell.m */; };
 		94598D751F0CD53A00B57144 /* Share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94598D741F0CD53A00B57144 /* Share.storyboard */; };
 		94624CFB1F50484200D52504 /* MEGAExportRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94624CFA1F50484200D52504 /* MEGAExportRequestDelegate.m */; };
-		94624CFC1F50516900D52504 /* MEGAExportRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94624CFA1F50484200D52504 /* MEGAExportRequestDelegate.m */; };
-		94624CFD1F50517700D52504 /* MEGAExportRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94624CFA1F50484200D52504 /* MEGAExportRequestDelegate.m */; };
 		946B2D191F46E5B9009ED32C /* CopyrightWarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946B2D181F46E5B9009ED32C /* CopyrightWarningViewController.m */; };
 		94892C921EFBEA3D00AEAC25 /* MEGASdkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152268A1A692ECC00EC7BB6 /* MEGASdkManager.m */; };
 		94892C931EFBEA4100AEAC25 /* MEGALogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A4204E1C4EA02C002E192E /* MEGALogger.m */; };
@@ -3387,9 +3383,9 @@
 		83FEA8B425C1B3980063A560 /* FolderLinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderLinkTableViewController.swift; sourceTree = "<group>"; };
 		851590A627D79CD00005F862 /* MEGAMintsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintsNode.swift; sourceTree = "<group>"; };
 		851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintsNodeInterface.swift; sourceTree = "<group>"; };
+		8519287C28153D64001F8546 /* MEGAMintNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEGAMintNode.swift; sourceTree = "<group>"; };
+		8519287D28153D65001F8546 /* MEGAMintNodeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEGAMintNodeInterface.swift; sourceTree = "<group>"; };
 		8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAWidgetExtension/Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
-		856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNode.swift; sourceTree = "<group>"; };
-		856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEGAMintNodeInterface.swift; sourceTree = "<group>"; };
 		856EE0A127D4A68100149D8C /* NFTMintActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFTMintActivity.h; sourceTree = "<group>"; };
 		856EE0A227D4A78900149D8C /* NFTMintActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFTMintActivity.m; sourceTree = "<group>"; };
 		8595E7B727E9C3A8005CB5D5 /* walletCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walletCoreData.xcdatamodel; sourceTree = "<group>"; };
@@ -5624,13 +5620,13 @@
 				BF6E8DFE25BA556B003A125A /* MainTabBarController+Additions.swift */,
 				0D8D4D1225B7C57500C7B7FE /* FileManager+Additions.swift */,
 				C4F31ECF25C1914800E15146 /* AVAsset+Additions.swift */,
+				8519287C28153D64001F8546 /* MEGAMintNode.swift */,
+				8519287D28153D65001F8546 /* MEGAMintNodeInterface.swift */,
 				83DC30CD25F247CA00A82F30 /* UIViewController+Additions.swift */,
 				0D213D212638DF9300B43723 /* CHTCollectionViewWaterfallLayout+Additions.swift */,
 				C4575F2B265FA2B800D527DC /* DispatchQueue+Additions.swift */,
 				C4EDB733266550A5006A114F /* UIFont+Additions.swift */,
 				C44080B4273580AF00E3EDDE /* UIViewController+Backup.swift */,
-				856EE08E27D1B9BC00149D8C /* MEGAMintNode.swift */,
-				856EE09427D1BA3000149D8C /* MEGAMintNodeInterface.swift */,
 				851590A627D79CD00005F862 /* MEGAMintsNode.swift */,
 				851590AC27D79CE90005F862 /* MEGAMintsNodeInterface.swift */,
 			);
@@ -11188,7 +11184,6 @@
 				B6D176872236F16600098084 /* ImageExporter.m in Sources */,
 				B658D3CF218FBC47004C0D64 /* UploadOperationFactory.m in Sources */,
 				5B7B4CA21EE5AC1200DA6A8D /* MEGAInviteContactRequestDelegate.m in Sources */,
-				856EE09527D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				B66709902228BCE90015E050 /* PHFetchOptions+CameraUpload.m in Sources */,
 				5D56820B252FEC9800FE7F9C /* Reader+GroupingSorting.swift in Sources */,
 				2F6F088E253E387600C5B5D7 /* TransfersWidgetViewController.m in Sources */,
@@ -11262,6 +11257,7 @@
 				C49F8639255AE2030074A054 /* AudioPlayer.swift in Sources */,
 				BF943E9E235541E1001C18E0 /* GlobalDNDNotificationControl.swift in Sources */,
 				A8A716E02639A71800DDC8E2 /* TurnOnNotificationsViewModel.swift in Sources */,
+				8519287E28153D66001F8546 /* MEGAMintNode.swift in Sources */,
 				5D1B23F924AF353E00ACE1C5 /* DarkColorFactory.swift in Sources */,
 				C44CE0052590B57000313719 /* AudioPlayer+RemoteCommand.swift in Sources */,
 				B662B85B24ECC7A30089376A /* AddPhoneNumberRouter.swift in Sources */,
@@ -11326,7 +11322,6 @@
 				5BFA9630252E1119003653EB /* ManageChatHistoryRepository.swift in Sources */,
 				5D8A76F124FCD0C900C0610C /* MEGAAvatarGeneratingUseCase.swift in Sources */,
 				BFB463DD2432F2E900FB90B9 /* ChatRoomDelegate.swift in Sources */,
-				856EE08F27D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				41AC66481AB1D493003FE8DA /* AboutTableViewController.m in Sources */,
 				5D4ACA082533259600935FC9 /* TableDataSourceConfigurationFactory.swift in Sources */,
 				2FD6A32A2574A73500C1997E /* PasteImagePreviewView.swift in Sources */,
@@ -11475,6 +11470,7 @@
 				83369CE42179D0A0002B09C3 /* CloudDriveCollectionViewController.m in Sources */,
 				BFAB115323CEA5C300BCE72D /* AlbumsTableViewDataSource.swift in Sources */,
 				5B947A9E267A2A3400715B0C /* GenericNodeTableViewCell.swift in Sources */,
+				8519288628153D66001F8546 /* MEGAMintNodeInterface.swift in Sources */,
 				BFCB810C250309620096BD57 /* PhotoExplorerListSource.swift in Sources */,
 				5DC016DE24F286FE00BE309A /* DevicePermission.swift in Sources */,
 				5D609288255BA0AE005FA3E4 /* NodeFavouriteActionRepository.swift in Sources */,
@@ -12586,7 +12582,6 @@
 				832F19ED2091BD8E0067679E /* MOMediaDestination+CoreDataProperties.m in Sources */,
 				C482B7CF271F33630074CFC4 /* RequestDelegate.swift in Sources */,
 				831D61A9218738F30038F5B8 /* MOFolderLayout+CoreDataProperties.m in Sources */,
-				856EE09627D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				A82D5CE226BC083500E73D27 /* PreferenceRepository.swift in Sources */,
 				9456054B1EDD7AD70094EF0F /* LTHPasscodeViewController.m in Sources */,
 				83B906BE249A29EC0088F15C /* UIButton+Additions.swift in Sources */,
@@ -12599,7 +12594,6 @@
 				942255091EDC04CD0074C51A /* DocumentPickerViewController.m in Sources */,
 				9456054D1EDD7DB20094EF0F /* RemoveLinkActivity.m in Sources */,
 				B604890F223C4F7A00BA91F9 /* MEGACoreDataStack.m in Sources */,
-				856EE09027D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				7747B2D9208625B50011814E /* Reachability.m in Sources */,
 				BF22BFB6268ACFAD00460DB3 /* TransferRecordDTO.swift in Sources */,
 				5B367577204FFC150087362D /* SendToChatActivity.m in Sources */,
@@ -12676,6 +12670,7 @@
 				944DF2BD1EF9379E007798DD /* MEGALogger.m in Sources */,
 				9456054E1EDD7DBD0094EF0F /* OpenInActivity.m in Sources */,
 				C482B7C7271EFCA00074CFC4 /* MVVM-R.swift in Sources */,
+				8519289528154954001F8546 /* MEGAExportRequestDelegate.m in Sources */,
 				943229371EDD88B1007DB542 /* SaveToCameraRollActivity.m in Sources */,
 				C470F07E26F89F6E00669C3D /* MEGANode+Backup.swift in Sources */,
 				B695B606264B43160050DF09 /* SVProgressHUD.m in Sources */,
@@ -12685,7 +12680,6 @@
 				BF6E8F6425C0C768003A125A /* MEGANode+Additions.swift in Sources */,
 				943229231EDD845E007DB542 /* MEGAStore.m in Sources */,
 				5B2E78CE1FA0C3450096C9BE /* MEGACreateFolderRequestDelegate.m in Sources */,
-				94624CFD1F50517700D52504 /* MEGAExportRequestDelegate.m in Sources */,
 				B53BDBE72761916E001D73F8 /* XCAssets+Generated.swift in Sources */,
 				12466817275DB8F600C94335 /* CustomModalBackupAlertRouter.swift in Sources */,
 				BF08AA0025CA28AD009DE3D2 /* MEGANode+FilePath.swift in Sources */,
@@ -12765,7 +12759,6 @@
 				5BE689942417CC2100462134 /* SelectableTableViewCell.m in Sources */,
 				A82D5CDD26BC07A900E73D27 /* PreferenceRepositoryProtocol.swift in Sources */,
 				B6990181262F92A800176FFC /* UncaughtExceptionHandler.swift in Sources */,
-				856EE09127D1B9BC00149D8C /* MEGAMintNode.swift in Sources */,
 				77892E9D20E5012C0020A533 /* ChatRoomCell.m in Sources */,
 				C42C357A2743D96E004D8BA9 /* NodeLoadOperation.swift in Sources */,
 				77D7E853243719E0005D2795 /* MEGAFunctions.swift in Sources */,
@@ -12775,6 +12768,7 @@
 				7747B2DB208625B70011814E /* Reachability.m in Sources */,
 				5B79E88F26E6973A0070D782 /* EmptyStateType.swift in Sources */,
 				831D61A8218738EC0038F5B8 /* MOFolderLayout+CoreDataClass.m in Sources */,
+				8519289628154955001F8546 /* MEGAExportRequestDelegate.m in Sources */,
 				BF5C36792491C917004DDA2F /* MEGAUser+Additions.swift in Sources */,
 				C46517A8272C9E32004F27A0 /* NodeEntity.swift in Sources */,
 				83FF502F247E86CD00EAC08B /* CustomModalAlertViewController.m in Sources */,
@@ -12847,7 +12841,6 @@
 				C46517B0272C9F12004F27A0 /* MEGANode+Mapper.swift in Sources */,
 				C42C35762743D8E3004D8BA9 /* BackupRootNodeAccess.swift in Sources */,
 				941135641F01071600D33428 /* NSString+MNZCategory.m in Sources */,
-				856EE09727D1BA3000149D8C /* MEGAMintNodeInterface.swift in Sources */,
 				BFE54779231F0F29007FB8F6 /* UIViewController+MNZCategory.m in Sources */,
 				A81DF3602508FE23009C8B60 /* Date+Formatting.swift in Sources */,
 				2F25A2DD240C92C1005EF524 /* StorageFullModalAlertViewController.swift in Sources */,
@@ -12878,7 +12871,6 @@
 				A82D5CD726BC075500E73D27 /* PreferenceWrapper.swift in Sources */,
 				5BA81EA11FC2FF0100C8146C /* RemoveSharingActivity.m in Sources */,
 				BFC470A424C66E4F00A23820 /* Date+Manipulation.swift in Sources */,
-				94624CFC1F50516900D52504 /* MEGAExportRequestDelegate.m in Sources */,
 				9411355C1F01008400D33428 /* MEGAStore.m in Sources */,
 				83337CAC2100B33D000F40A7 /* ItemListModel.m in Sources */,
 				BF943E9023553F11001C18E0 /* DNDTurnOnOption.swift in Sources */,
