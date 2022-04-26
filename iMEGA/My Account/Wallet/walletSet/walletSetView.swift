@@ -13,11 +13,11 @@ import AVFoundation
 import Web3
 
 struct walletSetView: View {
-    @State private var username: String = ""
+//    @State private var username: String = ""
     var body: some View {
         VStack {
-            TextField("合约地址",text: $username)
-            Text(username)
+//            TextField("合约地址",text: $username)
+//            Text(username)
             Text("1")
         }
     }

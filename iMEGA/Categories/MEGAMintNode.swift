@@ -7,14 +7,15 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MEGAMintNode: View {
-    var node = MEGANode()
+    @EnvironmentObject var mintModel: MintModel
     var body: some View {
         VStack {
-            Text(node.base64Handle ?? "No Base64")
-            Text(node.name ?? "No Name")
-            Text(node.publicLink ?? "No URL")
+            Text(mintModel.publicLink)
+            Text(mintModel.MintName)
         }
     }
 }
+

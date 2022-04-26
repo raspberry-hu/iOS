@@ -1080,6 +1080,7 @@
 		8539C39E280AFA570097A758 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C39D280AFA570097A758 /* Defaults */; };
 		8539C3A9280CFA2B0097A758 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 8539C3A8280CFA2B0097A758 /* KeychainAccess */; };
 		856EE0A327D4A78900149D8C /* NFTMintActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EE0A227D4A78900149D8C /* NFTMintActivity.m */; };
+		858CE4C128181BE200BBB993 /* MintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CE4C028181BE200BBB993 /* MintModel.swift */; };
 		858DBFB5280D42A60042AE75 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 858DBFB4280D42A60042AE75 /* SDWebImageSwiftUI */; };
 		8595E7A627E9AC75005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7A527E9AC75005CB5D5 /* ACarousel */; };
 		8595E7A927E9AC9D005CB5D5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8595E7A827E9AC9D005CB5D5 /* ACarousel */; };
@@ -3388,6 +3389,7 @@
 		8528FFB927EAFD47000ED5F0 /* Pods-iMEGA-MEGAWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-iMEGA-MEGAWidgetExtension/Pods-iMEGA-MEGAWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		856EE0A127D4A68100149D8C /* NFTMintActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFTMintActivity.h; sourceTree = "<group>"; };
 		856EE0A227D4A78900149D8C /* NFTMintActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFTMintActivity.m; sourceTree = "<group>"; };
+		858CE4C028181BE200BBB993 /* MintModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintModel.swift; sourceTree = "<group>"; };
 		8595E7B727E9C3A8005CB5D5 /* walletCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walletCoreData.xcdatamodel; sourceTree = "<group>"; };
 		8595E7B927E9C467005CB5D5 /* walletPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletPersistence.swift; sourceTree = "<group>"; };
 		8595E7BE27E9E5E0005CB5D5 /* NFTMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTMarketView.swift; sourceTree = "<group>"; };
@@ -5520,6 +5522,7 @@
 		41BADDA61A8E064E008408B3 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				858CE4BD28181BC300BBB993 /* MintModel */,
 				83850A4426B2BC1000C62304 /* MEGAProviderDelegate+Additions.swift */,
 				B6E7A8D52500D6BC00CD6AC2 /* Auto Layout */,
 				2FF46AF524D251EA00D6C504 /* FDFullscreenPopGesture */,
@@ -7772,6 +7775,14 @@
 				85CEB9FD27CF502C007F27E5 /* walletInterface.swift */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		858CE4BD28181BC300BBB993 /* MintModel */ = {
+			isa = PBXGroup;
+			children = (
+				858CE4C028181BE200BBB993 /* MintModel.swift */,
+			);
+			path = MintModel;
 			sourceTree = "<group>";
 		};
 		8595E7BB27E9E4C0005CB5D5 /* walletSet */ = {
@@ -11779,6 +11790,7 @@
 				BFD6564F25F6D22300052DE8 /* MeetingQuickActionView.swift in Sources */,
 				0D7E5FA62634E1E800C5CB2A /* DownloadFileRepository.swift in Sources */,
 				C44CE0112590C66F00313719 /* AudioPlayer+EventObservers.swift in Sources */,
+				858CE4C128181BE200BBB993 /* MintModel.swift in Sources */,
 				5BFA9618252E0E13003653EB /* ManageHistoryRepositoryProtocol.swift in Sources */,
 				B6E19B352175852E00882F74 /* AssetUploadInfo.m in Sources */,
 				A8F0A1D82178A73300575C57 /* MOMessage+CoreDataClass.m in Sources */,

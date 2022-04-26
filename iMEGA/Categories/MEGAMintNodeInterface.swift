@@ -11,38 +11,28 @@ import SwiftUI
 import UIKit
 
 @objc
-class MEGAMintNodeInterface: NSObject, MEGARequestDelegate {
+class MEGAMintNodeInterface: NSObject, MEGARequestDelegate, ObservableObject {
     private var nodesToExportCount = 1
-    private var semaphore = DispatchSemaphore(value: 1)
-    private var justUpgradedToProAccount = false
-    override init() {
-        nodesToExportCount = 1
-        semaphore = DispatchSemaphore(value: 1)
+    let mintModel = MintModel()
+    private func updateModel(forNode node: MEGANode) {
+        mintModel.publicLink = node.publicLink ?? "NIL"
+        mintModel.MintName = node.name ?? "NIL"
     }
     private func exportNode(node: MEGANode){
         MEGASdkManager.sharedMEGASdk().export(node, delegate: MEGAExportRequestDelegate.init(completion: { [self] (request) in
-//            print("测试打印：执行之前\(self?.nodesToExportCount)")
-//            (self.nodesToExportCount -= 1)
-//            if self.nodesToExportCount == 0 {
-//                print("测试打印：执行之中")
-                SVProgressHUD.dismiss()
-                self.semaphore.signal()
-//            }
-//            print("测试打印：执行之后\(self?.nodesToExportCount)")
+            SVProgressHUD.dismiss()
+            guard let nodeUpdated = MEGASdkManager.sharedMEGASdk().node(forHandle: node.handle) else {
+                return
+            }
+            self.updateModel(forNode: nodeUpdated)
             }, multipleLinks: nodesToExportCount > 1))
-    }
-    private func removeDelegates() {
-        MEGASdkManager.sharedMEGASdk().remove(self as MEGARequestDelegate)
     }
     @objc func MEGAMintNodeInterfaceView(_ node: MEGANode) -> UIViewController{
         if !node.isExported() {
             exportNode(node: node)
-            self.semaphore.wait()
+            self.mintModel.MintName = node.name ?? "NIL"
         }
-//        if node.isExported() {
-//            SVProgressHUD.dismiss()
-//        }
-        let details = MEGAMintNode(node: node)
+        let details = MEGAMintNode().environmentObject(mintModel)
         return UIHostingController(rootView: details)
     }
 }
